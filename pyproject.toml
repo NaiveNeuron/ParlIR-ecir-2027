@@ -1,0 +1,70 @@
+[project]
+name = "parlir"
+# Version of the code package. The dataset release it builds and evaluates is ParlIR v1.0 (HF tag v1.0).
+version = "1.0.0"
+description = "ParlIR: a test collection for answer and precedent retrieval from European Parliament written questions"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Marek Šuppa" },
+  { name = "Viktória Ondrejová" },
+]
+keywords = ["information retrieval", "test collection", "European Parliament", "parliamentary questions"]
+# Tested with CPython 3.11 and 3.12 (not the free-threaded builds, which some dependencies do not support yet).
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "httpx>=0.27",
+  "lxml>=5.2",
+  "python-docx>=1.1",
+  "tqdm>=4.66",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "pyarrow>=16",
+  "bm25s[full]>=0.2.6",
+  "PyStemmer>=2.2",
+  "ir-measures>=0.3.6",
+  "pytrec-eval-terrier>=0.5.6",
+  "scipy>=1.13",
+  "datasketch>=1.6",
+  "langid>=1.1.6",
+  "matplotlib>=3.9",
+  "huggingface-hub>=0.25",
+]
+
+[project.optional-dependencies]
+dense = [
+  "torch>=2.4",
+  "sentence-transformers>=3.2",
+  "transformers>=4.45",
+  "FlagEmbedding>=1.3",
+]
+irds = ["ir-datasets>=0.5"]
+
+[project.urls]
+Homepage = "https://github.com/NaiveNeuron/ParlIR-ecir-2027"
+Dataset = "https://huggingface.co/datasets/NaiveNeuron/parlir"
+Issues = "https://github.com/NaiveNeuron/ParlIR-ecir-2027/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["parlir"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["docs/preregistration"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+# E741 (variable named `l`) and E731 (assigned lambdas) are style choices kept in the analysis scripts.
+ignore = ["E741", "E731"]
+
+[tool.ruff.lint.per-file-ignores]
+# Runs inside an OMP eval cell, where `agent`, `wait` and `judge_batch` are provided as globals.
+"scripts/audit_llm_omp.py" = ["F821"]

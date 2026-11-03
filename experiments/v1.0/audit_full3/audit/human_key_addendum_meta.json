@@ -1,0 +1,17 @@
+{
+ "seed": 0,
+ "n": 53,
+ "quota": {
+  "both1_nonofficial": 30,
+  "new_both2_nonofficial": 23
+ },
+ "population": {
+  "both1_nonofficial": 2419,
+  "new_both2_nonofficial": 23
+ },
+ "inclusion_probability": {
+  "both1_nonofficial": 0.012401818933443571,
+  "new_both2_nonofficial": 1.0
+ },
+ "note": "added before any grading (D35); the original 150-row sheet is unchanged"
+}

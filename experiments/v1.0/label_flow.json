@@ -1,0 +1,84 @@
+{
+ "splits": {
+  "train": {
+   "answer": {
+    "queries": 59612,
+    "qrels": 59612
+   },
+   "precedent": {
+    "queries": 2302,
+    "qrels": 3393
+   },
+   "precedenthc": {
+    "queries": 1788,
+    "qrels": 2462
+   },
+   "cite": {
+    "queries": 3767,
+    "qrels": 5592
+   },
+   "citehc": {
+    "queries": 2991,
+    "qrels": 4199
+   }
+  },
+  "dev": {
+   "answer": {
+    "queries": 7735,
+    "qrels": 7735
+   },
+   "precedent": {
+    "queries": 252,
+    "qrels": 364
+   },
+   "precedenthc": {
+    "queries": 159,
+    "qrels": 208
+   },
+   "cite": {
+    "queries": 299,
+    "qrels": 441
+   },
+   "citehc": {
+    "queries": 186,
+    "qrels": 245
+   }
+  },
+  "test": {
+   "answer": {
+    "queries": 10962,
+    "qrels": 10962
+   },
+   "precedent": {
+    "queries": 301,
+    "qrels": 481
+   },
+   "precedenthc": {
+    "queries": 192,
+    "qrels": 269
+   },
+   "cite": {
+    "queries": 396,
+    "qrels": 634
+   },
+   "citehc": {
+    "queries": 256,
+    "qrels": 352
+   }
+  }
+ },
+ "edges": {
+  "ok": 4461,
+  "ok_drafting_only": 2685,
+  "cited_answer_not_before_reply": 281,
+  "cited_question_has_no_answer_doc": 98
+ },
+ "precedent_edges": {
+  "n": 4461,
+  "answer_to_question_gap_days_median": 112,
+  "share_within_183_days": 0.6303519390271239,
+  "both_authors_known": 2623,
+  "share_different_author": 0.7346549752192146
+ },
+ "empty_author_share": 0.23021426564854305
+}

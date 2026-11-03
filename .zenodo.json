@@ -1,0 +1,15 @@
+{
+  "title": "ParlIR: code for a test collection for answer and precedent retrieval from European Parliament written questions",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "description": "Code that builds, validates and evaluates ParlIR v1.0, a test collection of 78,309 European Parliament written questions and 76,536 official answers (parliamentary terms 8-10, 2014-2026) with temporal splits, known-item qrels (AnswerRet) and citation qrels (PrecedentRet, CiteRet). Includes the acquisition pipeline, baselines, the label audit, the summary files behind the paper's tables and the datasheet. The data itself is on Hugging Face (https://huggingface.co/datasets/NaiveNeuron/parlir, tag v1.0) under the terms in LICENSE-DATA.md (source texts CC BY 4.0 and EU reuse decisions; ParlIR annotations CC BY 4.0).",
+  "license": "mit",
+  "keywords": ["information retrieval", "test collection", "known-item retrieval", "citation retrieval", "parliamentary questions", "European Parliament"],
+  "creators": [
+    {"name": "Šuppa, Marek", "affiliation": "Comenius University in Bratislava", "orcid": "0000-0002-5887-0696"},
+    {"name": "Ondrejová, Viktória", "affiliation": "University of Oslo", "orcid": "0009-0000-7642-9485"}
+  ],
+  "related_identifiers": [
+    {"identifier": "https://huggingface.co/datasets/NaiveNeuron/parlir", "relation": "isSupplementedBy", "scheme": "url"}
+  ]
+}

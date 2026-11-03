@@ -1,0 +1,63 @@
+{
+ "build": "data/build/v1.0",
+ "hard_violations": {
+  "answer_query_missing": 0,
+  "answer_query_no_relevant": 0,
+  "answer_doc_missing": 0,
+  "query_wrong_split": 0,
+  "precedent_doc_missing": 0,
+  "precedent_not_before_query": 0,
+  "precedent_is_own_answer": 0,
+  "cite_doc_missing": 0,
+  "cite_not_before_reply": 0,
+  "cite_is_own_answer": 0,
+  "lenient_official_mismatch": 0,
+  "joint_group_split_across": 0,
+  "corpus_id_string_after_mask": 0,
+  "query_id_string_after_mask": 0,
+  "xling_query_id_string_after_mask": 0,
+  "corpus_empty": 0,
+  "query_empty": 0,
+  "corpus_header_in_text": 0
+ },
+ "ok": true,
+ "diagnostics": {
+  "answers_containing_own_question_ref_in_body_raw": 0.0002809203973746712,
+  "answers_containing_author_surname_raw": 0.0001404601986873356,
+  "answer_header_contains_own_ref": 0.9970631049365375,
+  "subject_verbatim_in_answer": 0.021745792578593867,
+  "residual_question_refs": {
+   "queries": 255,
+   "answers": 48,
+   "queries_by_split": {
+    "test": 5,
+    "train": 243,
+    "dev": 7
+   },
+   "dev_test_citation_targets_named": 0
+  },
+  "answer_dated_before_question": 1,
+  "answer_text_starts_with_date_placeholder": 55,
+  "exact_duplicate_answer_texts": {
+   "groups": 245,
+   "docs": 729
+  },
+  "joint_answer_rate": 0.01881467544684854,
+  "institution": {
+   "Council": 1892,
+   "VPHR": 4181,
+   "Commission": 70397,
+   "null": 66
+  },
+  "addressee": {
+   "Council": 1928,
+   "Commission": 71280,
+   "VPHR": 5091,
+   "null": 15
+  },
+  "n_corpus": 76536,
+  "n_queries": 78314,
+  "langid_en_rate_corpus_sample": 1.0,
+  "near_duplicate_answers_jaccard_ge_0.9": 885
+ }
+}

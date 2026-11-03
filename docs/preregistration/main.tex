@@ -1,0 +1,562 @@
+% ParlIR — ECIR 2027 Resource Track submission (LNCS, <=12 pages + references, single-blind)
+% STATUS: PROVISIONAL "paper-first" draft (Eisner). Numbers marked \TBD are unknown;
+% claims marked \HYP are hypotheses to be tested; \VERIFY marks facts not yet checked
+% against a primary source; \CITE{...} marks a reference not yet verified.
+% Compile with notes:   latexmk -pdf main.tex
+% Submission build:     set \notesfalse below (all notes disappear; any remaining
+%                       \TBD/\CITE become a compile error so nothing unverified ships).
+\documentclass[runningheads]{llncs}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric}
+
+\newif\ifnotes
+\notestrue
+\ifnotes
+  \usepackage[colorinlistoftodos,textsize=scriptsize]{todonotes}
+  \newcommand{\TBD}[1]{\textcolor{red}{\textbf{[TBD:~#1]}}}
+  \newcommand{\HYP}[1]{\textcolor{violet}{\textit{[Hypothesis:~#1]}}}
+  \newcommand{\VERIFY}[1]{\textcolor{orange}{#1\textsuperscript{[verify]}}}
+  \newcommand{\CITE}[1]{\textcolor{blue}{[cite:~#1]}}
+  \newcommand{\tbd}{\textcolor{red}{\textbf{?}}}
+  \newcommand{\nb}[1]{\todo[inline,color=yellow!30]{#1}}
+  \newcommand{\evidence}[1]{\todo[inline,color=green!20]{\textbf{Evidence needed:} #1}}
+\else
+  \usepackage[disable]{todonotes}
+  \newcommand{\TBD}[1]{\errmessage{Unresolved TBD: #1}}
+  \newcommand{\HYP}[1]{#1}
+  \newcommand{\VERIFY}[1]{#1}
+  \newcommand{\CITE}[1]{\errmessage{Unverified citation: #1}}
+  \newcommand{\nb}[1]{}
+  \newcommand{\tbd}{\errmessage{Unresolved table cell}}
+  \newcommand{\evidence}[1]{}
+\fi
+\newcommand{\parlir}{\textsc{ParlIR}}
+\newcommand{\taskA}{\textsc{AnswerRet}}
+\newcommand{\taskP}{\textsc{PrecedentRet}}
+
+\begin{document}
+
+\title{ParlIR: A Test Collection for Retrieving Official Answers to European Parliament Written Questions}
+\titlerunning{ParlIR}
+\author{Anonymous Authors\inst{1}}  % single-blind: real names go here before submission (human decision)
+\authorrunning{Authors}
+\institute{Affiliation withheld in draft}
+\maketitle
+
+\begin{abstract}
+Members of the European Parliament (MEPs) submit thousands of written
+questions to the European Commission, the Council and the High Representative
+every year, and each question receives an official, published answer.
+These question--answer pairs form a large, naturally occurring, institutionally
+linked record of information needs and the authoritative responses to them,
+yet they have not been packaged as an information retrieval test collection.
+We introduce \parlir{}, a reproducible test collection built from
+\TBD{N} written questions and \TBD{M} official answers spanning
+\TBD{years / parliamentary terms}. \parlir{} defines two tasks:
+\emph{answer retrieval}, finding the official answer to a question among all
+published answers, and \emph{precedent retrieval}, finding earlier answers
+that the institution itself cites as already addressing the question.
+Relevance comes from the Parliament's own administrative links and the
+answering institution's explicit cross-references, and we do not present
+these links as new annotations. Our contribution is to turn them into a
+validated benchmark. We remove identifier and boilerplate shortcuts, quantify
+question restatement, audit judgment incompleteness with pooled LLM
+assessments from multiple model families, and report \TBD{language
+configurations supported by the data}. Lexical, learned-sparse and dense
+baselines show that \TBD{headline finding}. Data, code, standard-format
+files and a datasheet are released under \TBD{licence}.
+\keywords{Test collection \and Parliamentary questions \and Multilingual retrieval \and Legislative information access}
+\end{abstract}
+
+\nb{PAPER-FIRST DRAFT (\today). This manuscript is the research specification.
+Every \texttt{Evidence needed} box names the experiment that must fill it.
+Facts known now vs.\ hypotheses vs.\ anticipated findings are marked
+explicitly. Do not remove a box until the evidence is committed under
+\texttt{experiments/}.}
+
+%======================================================================
+\section{Introduction}
+%======================================================================
+
+Parliamentary questions are one of the oldest and most widely used instruments
+of executive oversight. In the European Parliament, any Member may put
+questions for written answer to the Commission, the Council or the
+Vice-President/High Representative, and the addressee is expected to answer
+within a fixed deadline \VERIFY{(six weeks for the Commission)}. Questions
+and answers are published on the Parliament's website, each identified by a
+reference such as \texttt{E-001234/2021}, and the answer is linked to the
+question (or questions) it responds to.
+
+This publication record is unusual from a retrieval perspective. Each question
+is a genuine, self-contained information need, typically a few hundred
+words written by a domain-aware author with a specific policy concern. Each
+answer is an authoritative response written by the institution that holds
+the information. The correspondence between them is made by the institutions
+themselves, not by crowd workers or by a model. The topics range across
+all EU competences, from fisheries quotas and state aid to vaccine
+procurement and migration, and the record runs for
+\TBD{two decades}.
+
+Three groups need to search this record, and it serves them poorly. MEPs
+and their staff want to know whether a question has already been asked and
+answered before they submit it. Commission services drafting an answer need
+consistency with what the institution has already said, and answers
+frequently do refer back to earlier ones: ``the Commission would refer the
+Honourable Member to its answer to Written Question
+\texttt{E-XXXXXX/YYYY}''. Journalists, researchers and citizens want to
+trace what the executive has said on a topic over time. All three
+are retrieval problems over long, formal, domain-specific text in which the
+query and its relevant document are written by different parties in
+different registers.
+
+Despite this, the record has not been made into a retrieval test
+collection. Existing parliamentary resources focus on plenary debates
+\CITE{Multi-EuP, ParlaMint, Europarl}, on parallel text for machine
+translation \CITE{DCEP, Europarl}, or on political-science analysis of
+answer quality \CITE{Alvarez \& Morrier}. Existing legal and governmental IR
+benchmarks target statutes and case law \CITE{BSARD, COLIEE, MultiEURLEX}.
+\nb{Revisit after literature review: is there any EP written-question
+retrieval dataset? If so, reposition as an improvement-of-existing-resource
+paper (the CFP explicitly allows this).}
+
+Turning administrative records into a benchmark is not just a matter of
+downloading them. A naive collection could be trivial or misleading in at
+least four ways, and checking each one is a central part of our
+contribution:
+\begin{enumerate}
+\item \textbf{Shortcuts.} Answers may carry the question reference, the
+  asking MEP's name or a date that identifies the question.
+  A system that matches identifiers would solve the task without
+  understanding either text.
+\item \textbf{Restatement.} If answers routinely quote the question, answer
+  retrieval collapses into near-duplicate detection.
+\item \textbf{Incomplete judgments.} The official link marks one answer as
+  relevant, but other answers to similar questions on the same topic may
+  address the information need equally well. These would be counted as
+  false negatives.
+\item \textbf{Language availability.} ``Multilingual'' is only meaningful if
+  the texts actually exist in the claimed languages. Questions and answers
+  may be translated unevenly.
+\end{enumerate}
+
+\paragraph{Contributions.}
+\begin{enumerate}
+\item[C1] \textbf{A test collection} of \TBD{N} EP written questions and
+  \TBD{M} official answers with standardized metadata, temporal splits,
+  and TREC/BEIR-compatible files, built by a fully scripted pipeline from
+  public sources with checksums (\S\ref{sec:construction}).
+\item[C2] \textbf{Two tasks with institution-provided relevance}:
+  answer retrieval, and precedent retrieval derived from answers' explicit
+  cross-references (\S\ref{sec:tasks}).
+\item[C3] \textbf{A validity audit} that quantifies and removes identifier
+  and boilerplate shortcuts, measures question restatement, and estimates
+  judgment incompleteness with pooled, multi-family LLM assessments and
+  their agreement (\S\ref{sec:validity}).
+\item[C4] \textbf{Baselines} spanning lexical, learned-sparse, dense
+  multilingual and re-ranking models, with per-language and
+  per-period breakdowns (\S\ref{sec:experiments}).
+\end{enumerate}
+
+\evidence{C1: final counts per term/year/language (Table~\ref{tab:stats}).
+C2: number of precedent queries with $\geq 1$ resolvable cross-reference.
+C3: Tables~\ref{tab:shortcuts} and~\ref{tab:completeness}. C4: Table~\ref{tab:main}.}
+
+%======================================================================
+\section{Related Work}\label{sec:related}
+%======================================================================
+\nb{Written from first principles; the literature review (docs/related-work.md)
+will challenge and revise this section. All citations are placeholders until
+verified.}
+
+\paragraph{Parliamentary corpora.}
+Parliamentary text is a staple resource in NLP. Europarl \CITE{Koehn 2005} and
+DCEP \CITE{Hajlaoui et al.\ 2014} provide multilingual parallel text, mostly
+for machine translation. ParlaMint \CITE{Erjavec et al.} provides comparable
+corpora of national parliamentary debates. Multi-EuP \CITE{Multi-EuP}
+is, as far as we know, the closest IR resource: a multilingual
+retrieval benchmark built from European Parliament debate speeches and
+designed to study language bias in retrieval. \parlir{} differs in its
+unit of retrieval (formal written answers rather than debate speeches),
+in its source of relevance (institutional Q$\to$A links and explicit
+cross-references rather than \VERIFY{topic/speaker-derived} relevance), and
+in its task (finding an authoritative response to a specific information
+need).
+
+\paragraph{Parliamentary questions and answers.}
+Political scientists study written and oral questions as instruments of
+oversight, including whether ministers actually answer what was asked
+\CITE{Alvarez \& Morrier}. Parliamentary QA datasets exist for other
+legislatures \CITE{OpenSansad; UK written questions}. These resources
+analyse answer \emph{quality} or support QA generation. \parlir{}
+treats the answer archive as a retrieval target and provides an IR-grade
+evaluation setup with validated judgments.
+
+\paragraph{Legal, governmental and multilingual IR benchmarks.}
+Statutory article retrieval \CITE{BSARD}, case-law retrieval
+\CITE{COLIEE; LeCaRD} and EU legislation classification \CITE{MultiEURLEX}
+cover legal text, but their queries are expert-constructed or derived from
+legal reasoning. Multilingual IR benchmarks \CITE{MIRACL; Mr.TyDi; NeuCLIR;
+mMARCO} target open-domain or news text with assessor judgments or
+translations. \parlir{}'s queries are naturally occurring, long, and written
+by non-anonymous experts. Its relevant documents come from a single
+authoritative source, which gives it the character of a
+known-item~\CITE{known-item retrieval} and answer-retrieval
+\CITE{ANTIQUE; WikiPassageQA; FiQA} benchmark in a policy domain.
+
+\paragraph{Incomplete and LLM-based relevance judgments.}
+Sparse judgments are a long-standing concern in test-collection design
+\CITE{Buckley \& Voorhees 2004, bpref}. LLM-based relevance assessment has
+recently been shown to correlate with human preferences under some
+conditions \CITE{Thomas et al.\ 2024; UMBRELA; Faggioli et al.\ 2023} and
+criticised under others \CITE{Clarke \& Dietz}. We use LLM judgments only to
+\emph{audit} the official links. They are an augmentation layer with
+measured agreement and are never presented as ground truth.
+
+%======================================================================
+\section{Source Data and Provenance}\label{sec:source}
+%======================================================================
+
+\paragraph{Established facts (to be confirmed against primary sources).}
+EP questions for written answer are governed by the Parliament's Rules of
+Procedure \VERIFY{(Rule 138 in the 9th term)}. Questions are
+categorized as ordinary written questions (\texttt{E-}), priority
+questions (\texttt{P-}) and \VERIFY{questions for oral answer (\texttt{O-})},
+and are addressed to the Commission, the Council or the VP/HR. Answers are
+published with their own document identifiers and linked to the question.
+Several questions on the same topic may receive a single \emph{joint
+answer}.
+
+\paragraph{Unknowns resolved by the data-feasibility study.}
+\begin{itemize}
+\item Acquisition route: the EP Open Data Portal API vs.\ document
+  pages (\texttt{doceo}), and their coverage per term. \TBD{}
+\item Language coverage: the language versions in which questions and answers
+  are published, per term. \HYP{Answers are published in many EU languages,
+  while questions appear mainly in their original language and in English.}
+  \TBD{}
+\item Licence: \VERIFY{EP content may be reused with acknowledgement of the
+  source; Commission documents are reusable under CC~BY~4.0 by Commission
+  Decision}. \TBD{exact terms and how they combine}
+\item Temporal coverage and volume per year. \TBD{}
+\end{itemize}
+\evidence{docs/data-feasibility.md with real fetch counts; Table~\ref{tab:stats}.}
+
+%======================================================================
+\section{Task Definitions}\label{sec:tasks}
+%======================================================================
+
+Let $\mathcal{Q}$ be the set of written questions and $\mathcal{A}$ the set of
+published answers. The Parliament's records give a link relation
+$L\subseteq\mathcal{Q}\times\mathcal{A}$. Each question has at most one
+answer, but a joint answer may answer several questions. Each answer
+$a$ also has a publication date $t(a)$ and a set of cross-references
+$X(a)\subseteq\mathcal{Q}$ to earlier questions mentioned in its text.
+
+\paragraph{Task 1: \taskA{} (primary).}
+Given the text of a question $q$ (title and body, with identifiers
+masked; \S\ref{sec:masking}), rank the answer corpus $\mathcal{A}$.
+The official answer $a$ with $(q,a)\in L$ is relevant with grade~2.
+Pooled answers judged by the LLM-assessment protocol
+(\S\ref{sec:completeness}) to fully address $q$ receive grade~1 in the
+\emph{augmented} qrels. Official-only qrels are the primary evaluation
+and augmented qrels are a robustness check.
+Metrics: MRR@10 and Recall@\{10,100\} on official qrels; nDCG@10 on
+augmented qrels.
+\emph{Use case:} finding the authoritative response to a known information
+need. \emph{Why not trivial:} the question and the answer are written by different
+parties, and answers often reframe the question in terms of Commission
+competences and instruments. \HYP{BM25 MRR@10 $<0.8$ after masking.}
+
+\paragraph{Task 2: \taskP{} (secondary).}
+Given a question $q$ asked at time $t(q)$ whose official answer $a$ cites earlier
+questions ($X(a)\neq\emptyset$), rank only answers published before $t(q)$.
+Answers to cross-referenced questions are relevant. The answering institution
+itself judged that these earlier answers address the new question, which
+makes this a naturally occurring \emph{precedent} judgment.
+\emph{Use case:} ``has this already been answered?'', from MEP staff before
+submission or from drafters checking consistency. The temporal constraint
+keeps the setting realistic and stops a system from using the answer's own
+citation text.
+\emph{Caveat:} cross-references are a lower bound on relevance. Absence of
+a citation does not imply non-relevance, so we report Recall@$k$ and
+treat precision-oriented metrics with caution (\S\ref{sec:completeness}).
+
+\paragraph{Language configurations.}
+\HYP{At minimum: (i) English monolingual for both tasks; (ii) original-language
+question $\to$ English answer (cross-lingual) where the question's original
+language differs from English; (iii) monolingual non-English configurations
+for languages in which both question and answer are published.} The released
+configurations will be exactly those the data supports (\TBD{Table~\ref{tab:stats}}).
+
+\paragraph{Splits.}
+Temporal splits: train $<$ \TBD{2021}, dev \TBD{2021--2022}, test $\geq$
+\TBD{2023}. Temporal splitting (i) mirrors deployment, (ii) prevents topic
+leakage through joint answers across splits, and (iii) allows a
+contamination check by comparing performance before and after model
+training cut-offs. All questions linked to one joint answer go into the same
+split. The corpus for each split is the full answer set; queries are
+partitioned.
+
+%======================================================================
+\section{Collection Construction}\label{sec:construction}
+%======================================================================
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[node distance=3mm and 4mm, every node/.style={font=\scriptsize},
+  box/.style={draw,rounded corners,align=center,minimum height=7mm,text width=17mm}]
+\node[box] (src) {EP records\\(Q, A, links)};
+\node[box,right=of src] (parse) {Parse \&\\normalize};
+\node[box,right=of parse] (mask) {Mask ids,\\boilerplate};
+\node[box,right=of mask] (check) {Integrity \&\\leakage checks};
+\node[box,right=of check] (out) {Corpus, queries,\\qrels, splits};
+\node[box,below=of mask] (xref) {Extract\\cross-refs};
+\node[box,below=of check] (pool) {Pool + LLM\\audit (multi-family)};
+\draw[-{Latex}] (src)--(parse); \draw[-{Latex}] (parse)--(mask);
+\draw[-{Latex}] (mask)--(check); \draw[-{Latex}] (check)--(out);
+\draw[-{Latex}] (parse)|-(xref); \draw[-{Latex}] (xref)--(pool);
+\draw[-{Latex}] (pool)-|(out);
+\end{tikzpicture}
+\caption{\parlir{} construction pipeline. Each stage is a script with
+recorded inputs, outputs and checksums.}
+\label{fig:pipeline}
+\end{figure}
+
+\paragraph{Acquisition and parsing.} \TBD{endpoint(s), formats, dates of
+crawl, number of failures}. For each question we keep: identifier, type,
+term, date, addressee, asking MEP(s) and political group (as metadata,
+\emph{not} as retrieval input), title, body, and the language versions
+available. For each answer we keep: identifier, date, answering institution,
+answerer, text per language, the questions it answers, and the cross-references
+extracted from its text.
+
+\paragraph{Masking and boilerplate removal.}\label{sec:masking}
+We remove or mask: (i) question and answer reference numbers in both texts,
+replaced with a neutral placeholder so that cross-reference \emph{syntax}
+stays visible without the identity; (ii) header lines such as
+``Answer given by \ldots{} on behalf of the European Commission''; (iii)
+the asking MEP's name when it appears in the answer; and (iv)
+\TBD{other patterns found in the shortcut audit}. Both raw and masked texts
+are released. Masked texts are canonical for evaluation.
+
+\paragraph{Integrity checks.} Automated checks, run on every build:
+every query has $\geq1$ relevant document; no relevant document is empty
+after masking; link symmetry between question and answer records; no
+answer identifier string survives masking; language-ID agreement with the
+declared language; exact- and near-duplicate answers (MinHash) flagged and
+grouped; joint-answer groups never split across train/dev/test.
+\evidence{experiments/integrity/: check report with counts of violations (target zero) and dropped records with reasons.}
+
+\paragraph{Formats and tooling.}
+Corpus and queries as JSONL (BEIR layout), qrels in TREC format, an
+\texttt{ir\_datasets}-style loader \TBD{(integration status)}, and evaluation
+via \texttt{ir\_measures}/\texttt{pytrec\_eval} with pinned versions.
+
+%======================================================================
+\section{Validity Audit}\label{sec:validity}
+%======================================================================
+This section turns the four risks from the introduction into measurements.
+Each subsection states the claim, the test, and the decision rule fixed in
+advance.
+
+\subsection{Identifier and boilerplate shortcuts}
+\textbf{Claim.} After masking, no surface feature other than content
+reliably identifies the official answer.
+\textbf{Test.} (a) The fraction of answers containing their own question's
+reference, the asking MEP's name, or the question title verbatim, before
+and after masking. (b) An ``identifier oracle'' that ranks answers by
+shared reference tokens alone. (c) BM25 on raw vs.\ masked text.
+\textbf{Decision rule.} If BM25 MRR@10 drops by more than \TBD{0.05} after
+masking, the raw collection had a shortcut. We then report that drop and
+use masked text as canonical. If the identifier oracle scores MRR@10
+$>0.05$ on masked text, masking is incomplete and must be extended.
+
+\begin{table}[t]
+\caption{Shortcut audit (\taskA{}, test split). Rates are the percentage of
+answers containing the feature; retrieval scores are MRR@10.}
+\label{tab:shortcuts}
+\centering
+\input{tables/shortcuts.tex}
+\end{table}
+
+\subsection{Question restatement}
+\textbf{Claim.} Answers do not routinely copy their questions, so \taskA{} is
+not near-duplicate detection.
+\textbf{Test.} The distribution of the longest common token substring and of
+token-level Jaccard overlap between each question and (i) its official answer,
+(ii) the BM25 top-ranked non-relevant answer, and (iii) a random answer.
+We also stratify retrieval effectiveness by overlap quintile.
+\textbf{Anticipated finding.} \HYP{Official answers overlap with their questions
+more than random answers do, but most fall within the range of the hard
+negatives. Effectiveness then depends on overlap, which leaves headroom on the
+low-overlap quintiles.}
+
+\subsection{Judgment completeness}\label{sec:completeness}
+\textbf{Claim.} System rankings under official-only qrels are stable when
+judgments are augmented, and the official answer is almost always among the
+most relevant documents for its question.
+\textbf{Protocol.} For a stratified sample of \TBD{n} test queries, we pool the
+top-\TBD{10} documents from all baselines and ask LLM judges from
+\TBD{$\geq2$} model families, accessed through a single orchestration layer
+with logged prompts and model identifiers, to grade each pooled pair on a
+three-level scale (fully answers / partially / not relevant). Official answers
+are included in the pool without being flagged, so the judges' recall on
+official answers serves as a calibration check.
+\textbf{Measurements.} Inter-judge agreement (Cohen's $\kappa$, Krippendorff's
+$\alpha$); judge agreement with the official links; the number of
+non-official answers judged fully relevant per query; and Kendall's $\tau$
+between system rankings under official and augmented qrels.
+\textbf{Decision rule.} If $\tau<0.9$, official-only qrels are not adequate
+on their own. We then promote augmented qrels to primary, with the judge
+disagreement reported.
+
+\begin{table}[t]
+\caption{Judgment completeness audit on \TBD{n} pooled test queries.}
+\label{tab:completeness}
+\centering
+\input{tables/completeness.tex}
+\end{table}
+
+\subsection{Language availability}
+\textbf{Claim.} Every released language configuration consists of
+officially published texts, not machine translations we produced.
+\textbf{Test.} Per-term counts of question and answer language versions, and
+language-ID agreement with the declared language.
+\evidence{Table~\ref{tab:stats} language columns; language-ID agreement rate.}
+
+%======================================================================
+\section{Collection Statistics}\label{sec:stats}
+%======================================================================
+\begin{table}[t]
+\caption{\parlir{} statistics per split. Lengths are median whitespace tokens
+of masked English text.}
+\label{tab:stats}
+\centering
+\input{tables/stats.tex}
+\end{table}
+
+\begin{table}[t]
+\caption{Comparison with related resources. Properties as reported by the
+respective papers.}
+\label{tab:compare}
+\centering\scriptsize
+\input{tables/compare.tex}
+\end{table}
+
+\TBD{Describe: volume per term, addressee distribution, joint-answer rate,
+cross-reference rate, topic distribution (EuroVoc/subject if available),
+length distributions.}
+
+%======================================================================
+\section{Baseline Experiments}\label{sec:experiments}
+%======================================================================
+
+\paragraph{Systems.} Chosen to span the main retrieval families, while
+staying cheap enough for any lab to reproduce:
+(i) BM25 \TBD{(implementation, parameters)}; (ii) BM25 with RM3 query
+expansion; (iii) learned sparse and dense retrieval with BGE-M3
+\CITE{BGE-M3}; (iv) multilingual E5 \CITE{mE5} (base and large);
+(v) cross-encoder re-ranking of BM25 top-100 with \TBD{bge-reranker-v2-m3};
+(vi) a dense model fine-tuned on the \parlir{} training split, to show that
+the training split is useful \TBD{(if time permits)}.
+All runs are released.
+
+\paragraph{Long inputs.} Questions are \TBD{x} tokens and answers \TBD{y}
+tokens at the median. Dense models truncate at their maximum length
+\TBD{(512/8192)}, and we report the truncation rate.
+
+\begin{table}[t]
+\caption{Main results on the test split (English). Official qrels unless
+stated otherwise. Best in bold. Significance: paired $t$-test vs.\ BM25 with
+Holm correction.}
+\label{tab:main}
+\centering
+\input{tables/main.tex}
+\end{table}
+
+\paragraph{Planned analyses.}
+\begin{itemize}
+\item \textbf{Cross-lingual.} For each language configuration, the gap between
+  monolingual and cross-lingual effectiveness (\TBD{Table/Figure}).
+\item \textbf{Temporal.} Effectiveness by year (Figure~\ref{fig:temporal}).
+  \HYP{Dense models pre-trained on web crawls do better on older questions,
+  which may have appeared in their training data.}
+\item \textbf{Addressee.} Commission vs.\ Council vs.\ VP/HR.
+\item \textbf{Failure analysis.} \TBD{n} randomly sampled BM25 and
+  dense failures, categorised as joint answers, generic answers (``the
+  Commission has no information'') or genuinely ambiguous topics.
+\end{itemize}
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.9\linewidth}{\centering\vspace{1.2cm}
+\TBD{Figure: MRR@10 per year of question (x-axis: year; y-axis: MRR@10;
+one line per system). Generated by \texttt{scripts/make\_figures.py}.}
+\vspace{1.2cm}}}
+\caption{\taskA{} effectiveness by year of question.}
+\label{fig:temporal}
+\end{figure}
+
+\paragraph{Results.} \TBD{Write after experiments. Anticipated shape (to be
+confirmed or refuted):} \HYP{lexical baselines are strong because both
+sides share policy terminology; dense multilingual models are competitive
+but limited by long inputs; re-ranking helps most; \taskP{} is
+substantially harder than \taskA{}; cross-lingual configurations show a
+gap of \TBD{x} points.}
+
+%======================================================================
+\section{Resource Availability, Licensing and Maintenance}\label{sec:release}
+%======================================================================
+\parlir{} is released at \TBD{GitHub URL} (code) and \TBD{Hugging Face / Zenodo DOI}
+(data), with a datasheet \CITE{Gebru et al., Datasheets for Datasets}.
+Source texts are redistributed under the EP's and Commission's reuse terms
+\TBD{exact statement}. Build scripts regenerate the collection from the
+public sources, and checksums allow verification. Maintenance: the pipeline
+is incremental, so new terms can be added as they are published.
+\TBD{Maintenance commitment (human decision).}
+
+%======================================================================
+\section{Limitations and Ethical Considerations}\label{sec:limits}
+%======================================================================
+\begin{itemize}
+\item \textbf{Relevance is institutional.} The official answer is the
+  institution's response, not necessarily the best answer, and it may be
+  evasive. \parlir{} measures retrieval of responses, not answer quality.
+\item \textbf{Incomplete judgments.} Mitigated but not eliminated by
+  pooled LLM audits, which have their own biases. We release judge outputs
+  and disagreements.
+\item \textbf{Language imbalance.} Coverage follows the institutions'
+  publication practice. \TBD{quantify}
+\item \textbf{Personal data.} MEPs are public office-holders acting in an
+  official capacity. Names are kept as metadata in the raw records, are
+  excluded from retrieval inputs, and can be dropped.
+  \TBD{GDPR note; human decision.}
+\item \textbf{Political bias.} Question volume varies by political group and
+  member state. \TBD{report distribution}
+\item \textbf{LLM use.} LLMs are used only for auditing judgments and
+  never to generate collection content.
+\end{itemize}
+
+%======================================================================
+\section{Conclusion}
+%======================================================================
+\TBD{Final.} Intended conclusion, to be confirmed or revised by the evidence:
+\HYP{\parlir{} turns a large, institutionally linked public record into a
+validated test collection. Its relevance comes from the institutions
+themselves, its shortcuts are removed, its judgment incompleteness is
+measured, and it offers a nontrivial retrieval task over long policy text
+with temporal and cross-lingual dimensions.}
+
+% Enabled once refs.bib holds the first verified reference.
+\IfFileExists{refs.bib}{\bibliographystyle{splncs04}\bibliography{refs}}{}
+
+\end{document}

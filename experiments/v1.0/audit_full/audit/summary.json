@@ -1,0 +1,217 @@
+{
+ "n_queries": 300,
+ "n_judged_pairs": 13220,
+ "kappa": 0.6028393739930185,
+ "confusion": {
+  "1-1": 2056,
+  "0-1": 1281,
+  "0-0": 8238,
+  "2-2": 516,
+  "1-2": 432,
+  "1-0": 493,
+  "0-2": 28,
+  "2-1": 169,
+  "2-0": 7
+ },
+ "official_grade2": [
+  272,
+  300,
+  [
+   0.8684138011961098,
+   0.9346362090723985
+  ]
+ ],
+ "official_grade_ge1": [
+  298,
+  300,
+  [
+   0.9760219257685385,
+   0.9981698899670288
+  ]
+ ],
+ "random_grade0": [
+  600,
+  600,
+  [
+   0.9936380666717896,
+   1.0000000000000002
+  ]
+ ],
+ "queries_with_nonofficial_grade2": [
+  191,
+  300,
+  [
+   0.5808305794961457,
+   0.68904688297114
+  ]
+ ],
+ "nonofficial_grade2_per_query_mean": 1.7933333333333332,
+ "nonofficial_grade1_per_query_mean": 11.486666666666666,
+ "pool_yield_grade2_by_source": {
+  "bge-m3_text": 257,
+  "bm25_text": 245,
+  "me5-base_text": 231,
+  "rerank_text": 262,
+  "me5-base-ftdm_text": 90,
+  "me5-large_text": 17,
+  "me5-base-ft_text": 62,
+  "rrf_text": 9
+ },
+ "systems": [
+  "bm25_text",
+  "bm25tuned_text",
+  "me5-base_text",
+  "me5-large_text",
+  "bge-m3_text",
+  "me5-base-ft_text",
+  "rrf_text",
+  "rerank_text"
+ ],
+ "mrr_official": {
+  "bm25_text": 0.5931693121693121,
+  "bm25tuned_text": 0.5994378306878307,
+  "me5-base_text": 0.5423015873015874,
+  "me5-large_text": 0.509063492063492,
+  "bge-m3_text": 0.5583677248677249,
+  "me5-base-ft_text": 0.41965211640211636,
+  "rrf_text": 0.628117724867725,
+  "rerank_text": 0.5303875661375662
+ },
+ "mrr_augmented": {
+  "bm25_text": 0.71444708994709,
+  "bm25tuned_text": 0.7217711640211641,
+  "me5-base_text": 0.6694603174603174,
+  "me5-large_text": 0.6134986772486772,
+  "bge-m3_text": 0.6780674603174603,
+  "me5-base-ft_text": 0.5229325396825397,
+  "rrf_text": 0.7480820105820106,
+  "rerank_text": 0.6647354497354497
+ },
+ "kendall_tau_b": 1.0,
+ "kendall_tau_b_ci": [
+  0.6428571428571429,
+  1.0
+ ],
+ "pairwise_reversals": [],
+ "families": [
+  "judge-claude",
+  "judge-gpt"
+ ],
+ "held_out": [],
+ "t": "2026-10-20T10:48:10+00:00",
+ "judged_at_10": {
+  "bm25_text": 0.9996666666666667,
+  "bm25tuned_text": 0.9996666666666667,
+  "me5-base_text": 0.977,
+  "me5-large_text": 0.9776666666666667,
+  "bge-m3_text": 0.9933333333333333,
+  "me5-base-ft_text": 0.994,
+  "rrf_text": 1.0,
+  "rerank_text": 1.0
+ },
+ "weighted": {
+  "queries_with_nonofficial_grade2": 0.5384856777960255,
+  "queries_with_nonofficial_grade2_ci": [
+   0.46765067201849114,
+   0.6089387581341615
+  ],
+  "nonofficial_grade2_per_query_mean": 1.6586328528857335,
+  "mrr_official": {
+   "bm25_text": 0.5573996147345014,
+   "bm25tuned_text": 0.5622977481612792,
+   "me5-base_text": 0.5001263059786162,
+   "me5-large_text": 0.4547558337653234,
+   "bge-m3_text": 0.5464715853419584,
+   "me5-base-ft_text": 0.3951252566586471,
+   "rrf_text": 0.6138232335079653,
+   "rerank_text": 0.5137735042363784
+  },
+  "mrr_augmented": {
+   "bm25_text": 0.6732859797530506,
+   "bm25tuned_text": 0.6911709870268553,
+   "me5-base_text": 0.6218179299533096,
+   "me5-large_text": 0.5417354410474304,
+   "bge-m3_text": 0.6560206659079153,
+   "me5-base-ft_text": 0.4800962314257358,
+   "rrf_text": 0.729646558240157,
+   "rerank_text": 0.6349257840215718
+  },
+  "strata_population": {
+   "hit0_cite0": 5813,
+   "hit0_cite1": 250,
+   "hit1_cite0": 4749,
+   "hit1_cite1": 150
+  },
+  "strata_sampled": {
+   "hit0_cite0": 75,
+   "hit0_cite1": 75,
+   "hit1_cite0": 75,
+   "hit1_cite1": 75
+  }
+ },
+ "kendall_tau_b_unweighted": 1.0,
+ "bootstrap": "stratified (within-stratum resampling), population-weighted; n_boot=1000",
+ "cited_by_official_reply_by_grade": {
+  "0": {
+   "cited": 2,
+   "n": 8936,
+   "rate": 0.00022381378692927484
+  },
+  "1": {
+   "cited": 97,
+   "n": 3446,
+   "rate": 0.028148578061520605
+  },
+  "2": {
+   "cited": 74,
+   "n": 538,
+   "rate": 0.137546468401487
+  }
+ },
+ "table_rows": [
+  [
+   "Sampled test queries / judged pairs",
+   "300 / 13220"
+  ],
+  [
+   "Inter-judge Cohen's $\\kappa$ (3 grades)",
+   "0.603"
+  ],
+  [
+   "Official answers graded 2 (95\\% CI)",
+   "272/300 (87--93\\%)"
+  ],
+  [
+   "Random controls graded 0 (95\\% CI)",
+   "600/600 (99--100\\%)"
+  ],
+  [
+   "Queries with $\\geq$1 non-official grade-2 answer in the pool, sample",
+   "191/300 (58--69\\%)"
+  ],
+  [
+   "\\quad same, weighted to the test population (95\\% CI)",
+   "54\\% (47--61\\%)"
+  ],
+  [
+   "Non-official grade-2 / grade-1 answers per query (sample)",
+   "1.79 / 11.49"
+  ],
+  [
+   "Kendall's $\\tau_b$ of weighted orderings (95\\% CI)",
+   "1.000 (0.643--1.000)"
+  ],
+  [
+   "Pairwise system reversals",
+   "0 of 28"
+  ],
+  [
+   "Judged@10: pooled runs (min) / held-out run(s)",
+   "0.98 / "
+  ],
+  [
+   "Cited by the official reply: grade 2 / 1 / 0 (non-official)",
+   "14\\% / 3\\% / 0\\%"
+  ]
+ ]
+}

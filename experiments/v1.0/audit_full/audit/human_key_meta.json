@@ -1,0 +1,24 @@
+{
+ "seed": 0,
+ "n": 150,
+ "quota": {
+  "disagree": 60,
+  "both2_nonofficial": 45,
+  "official": 30,
+  "random": 15
+ },
+ "population": {
+  "disagree": 2348,
+  "both2_nonofficial": 299,
+  "official": 300,
+  "random": 600
+ },
+ "excluded_strata": "non-official pairs on which both judges agree on grade 0 or 1 are never sampled",
+ "inclusion_probability": {
+  "disagree": 0.02555366269165247,
+  "both2_nonofficial": 0.1505016722408027,
+  "official": 0.1,
+  "random": 0.025
+ },
+ "note": "written after export from the export's printed bucket sizes; the sheet was not re-sampled"
+}

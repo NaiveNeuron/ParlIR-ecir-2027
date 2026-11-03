@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use ParlIR, please cite it as below."
+title: "ParlIR: A Test Collection for Answer and Precedent Retrieval from European Parliament Written Questions"
+version: "1.0"
+date-released: "2026-10-20"
+license: MIT
+repository-code: "https://github.com/NaiveNeuron/ParlIR-ecir-2027"
+url: "https://huggingface.co/datasets/NaiveNeuron/parlir"
+keywords:
+  - information retrieval
+  - test collection
+  - known-item retrieval
+  - parliamentary questions
+  - European Parliament
+authors:
+  - family-names: "Šuppa"
+    given-names: "Marek"
+    affiliation: "Comenius University in Bratislava"
+    orcid: "https://orcid.org/0000-0002-5887-0696"
+  - family-names: "Ondrejová"
+    given-names: "Viktória"
+    affiliation: "University of Oslo"
+    orcid: "https://orcid.org/0009-0000-7642-9485"

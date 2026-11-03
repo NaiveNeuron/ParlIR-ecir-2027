@@ -1,0 +1,4215 @@
+{
+ "answer_dev_bm25-k0.6-b0.3_text": {
+  "aggregate": {
+   "RR@10": 0.49237695078031213,
+   "R@10": 0.6998060762766645,
+   "R@30": 0.8077569489334195,
+   "R@100": 0.8839043309631545,
+   "nDCG@10": 0.5420863505242877,
+   "Success@1": 0.3974143503555268
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.6,
+   "b": 0.3,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 44.8
+  }
+ },
+ "answer_dev_bm25-k0.6-b0.5_text": {
+  "aggregate": {
+   "RR@10": 0.5057585085316177,
+   "R@10": 0.7142857142857143,
+   "R@30": 0.8184873949579832,
+   "R@100": 0.8934712346477053,
+   "nDCG@10": 0.5557270735306792,
+   "Success@1": 0.41047188106011634
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.6,
+   "b": 0.5,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 43.3
+  }
+ },
+ "answer_dev_bm25-k0.6-b0.75_text": {
+  "aggregate": {
+   "RR@10": 0.5142392341552006,
+   "R@10": 0.7265675500969618,
+   "R@30": 0.8266321913380736,
+   "R@100": 0.9003232062055592,
+   "nDCG@10": 0.5652347809101149,
+   "Success@1": 0.4153846153846154
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.6,
+   "b": 0.75,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 43.7
+  }
+ },
+ "answer_dev_bm25-k0.6-b0.9_text": {
+  "aggregate": {
+   "RR@10": 0.5181155539138732,
+   "R@10": 0.7354880413703944,
+   "R@30": 0.8307692307692308,
+   "R@100": 0.9035552682611506,
+   "nDCG@10": 0.5702391987954627,
+   "Success@1": 0.4179702650290886
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.6,
+   "b": 0.9,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 44.6
+  }
+ },
+ "answer_dev_bm25-k0.9-b0.3_text": {
+  "aggregate": {
+   "RR@10": 0.49299919967987194,
+   "R@10": 0.7029088558500323,
+   "R@30": 0.810989010989011,
+   "R@100": 0.8868778280542986,
+   "nDCG@10": 0.5433158813610051,
+   "Success@1": 0.39728506787330314
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.3,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 44.4
+  }
+ },
+ "answer_dev_bm25-k0.9-b0.5_text": {
+  "aggregate": {
+   "RR@10": 0.5075127999917917,
+   "R@10": 0.7201034259857789,
+   "R@30": 0.8223658694246929,
+   "R@100": 0.8978668390433097,
+   "nDCG@10": 0.5585107218228914,
+   "Success@1": 0.40982546864899805
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.5,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 44.1
+  }
+ },
+ "answer_dev_bm25-k0.9-b0.75_text": {
+  "aggregate": {
+   "RR@10": 0.516886806004453,
+   "R@10": 0.7335488041370394,
+   "R@30": 0.8321913380736911,
+   "R@100": 0.9051066580478345,
+   "nDCG@10": 0.5688882097533597,
+   "Success@1": 0.416677440206852
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.75,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 44.6
+  }
+ },
+ "answer_dev_bm25-k0.9-b0.9_text": {
+  "aggregate": {
+   "RR@10": 0.5196268250890099,
+   "R@10": 0.7388493859082095,
+   "R@30": 0.8368455074337428,
+   "R@100": 0.907175177763413,
+   "nDCG@10": 0.5721595764438636,
+   "Success@1": 0.41990950226244345
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.9,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 44.0
+  }
+ },
+ "answer_dev_bm25-k1.2-b0.3_text": {
+  "aggregate": {
+   "RR@10": 0.4908640379228615,
+   "R@10": 0.7030381383322559,
+   "R@30": 0.8117647058823529,
+   "R@100": 0.8877828054298642,
+   "nDCG@10": 0.5417346740160254,
+   "Success@1": 0.39353587588881705
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 1.2,
+   "b": 0.3,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 44.8
+  }
+ },
+ "answer_dev_bm25-k1.2-b0.5_text": {
+  "aggregate": {
+   "RR@10": 0.5060729932998841,
+   "R@10": 0.723464770523594,
+   "R@30": 0.8255979314802844,
+   "R@100": 0.8989010989010989,
+   "nDCG@10": 0.558140040000568,
+   "Success@1": 0.4074983839689722
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 1.2,
+   "b": 0.5,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 43.8
+  }
+ },
+ "answer_dev_bm25-k1.2-b0.75_text": {
+  "aggregate": {
+   "RR@10": 0.5159918839330604,
+   "R@10": 0.7365223012281836,
+   "R@30": 0.833354880413704,
+   "R@100": 0.9062702003878474,
+   "nDCG@10": 0.5688026508988353,
+   "Success@1": 0.41616031027795736
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 1.2,
+   "b": 0.75,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 43.6
+  }
+ },
+ "answer_dev_bm25-k1.2-b0.9_text": {
+  "aggregate": {
+   "RR@10": 0.5171208996419081,
+   "R@10": 0.7372979961215256,
+   "R@30": 0.8371040723981901,
+   "R@100": 0.9076923076923077,
+   "nDCG@10": 0.5698783330036837,
+   "Success@1": 0.41771170006464126
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 1.2,
+   "b": 0.9,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 44.8
+  }
+ },
+ "answer_dev_bm25-k1.5-b0.3_text": {
+  "aggregate": {
+   "RR@10": 0.48674356922256085,
+   "R@10": 0.7005817711700064,
+   "R@30": 0.8104718810601164,
+   "R@100": 0.8886877828054298,
+   "nDCG@10": 0.5380254281583505,
+   "Success@1": 0.3891402714932127
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 1.5,
+   "b": 0.3,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 43.2
+  }
+ },
+ "answer_dev_bm25-k1.5-b0.5_text": {
+  "aggregate": {
+   "RR@10": 0.5027327341192888,
+   "R@10": 0.7219133807369101,
+   "R@30": 0.8255979314802844,
+   "R@100": 0.9005817711700065,
+   "nDCG@10": 0.5552392716646639,
+   "Success@1": 0.4032320620555915
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 1.5,
+   "b": 0.5,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 44.1
+  }
+ },
+ "answer_dev_bm25-k1.5-b0.75_text": {
+  "aggregate": {
+   "RR@10": 0.5121122808097598,
+   "R@10": 0.7313510019392372,
+   "R@30": 0.8334841628959276,
+   "R@100": 0.9069166127989657,
+   "nDCG@10": 0.5647003136328588,
+   "Success@1": 0.4118939883645766
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 1.5,
+   "b": 0.75,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 46.2
+  }
+ },
+ "answer_dev_bm25-k1.5-b0.9_text": {
+  "aggregate": {
+   "RR@10": 0.51081760909492,
+   "R@10": 0.734065934065934,
+   "R@30": 0.8347769877181642,
+   "R@100": 0.907175177763413,
+   "nDCG@10": 0.5643626435031132,
+   "Success@1": 0.4090497737556561
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 1.5,
+   "b": 0.9,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 43.5
+  }
+ },
+ "answer_dev_bm25_text": {
+  "aggregate": {
+   "RR@10": 0.5015515436944008,
+   "R@10": 0.7115707821590175,
+   "R@30": 0.8175824175824176,
+   "R@100": 0.892049127343245,
+   "nDCG@10": 0.5519335241856164,
+   "Success@1": 0.4050420168067227
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 46.9
+  }
+ },
+ "answer_dev_me5-base-ft2019_text": {
+  "aggregate": {
+   "RR@10": 0.524703060711464,
+   "R@10": 0.7463477698771817,
+   "R@30": 0.8544279250161603,
+   "R@100": 0.9332902391725921,
+   "nDCG@10": 0.578018026235704,
+   "Success@1": 0.4200387847446671
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 84.5
+  }
+ },
+ "answer_dev_me5-base-ft_text": {
+  "aggregate": {
+   "RR@10": 0.4420296323657668,
+   "R@10": 0.626115061409179,
+   "R@30": 0.7255332902391726,
+   "R@100": 0.8161603102779573,
+   "nDCG@10": 0.48617038421425485,
+   "Success@1": 0.3570782159017453
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 83.8
+  }
+ },
+ "answer_dev_me5-base-ftdm_text": {
+  "aggregate": {
+   "RR@10": 0.6106039338812448,
+   "R@10": 0.832579185520362,
+   "R@30": 0.9184227537168713,
+   "R@100": 0.9692307692307692,
+   "nDCG@10": 0.6641395352476948,
+   "Success@1": 0.5023917259211377
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 82.2
+  }
+ },
+ "answer_dev_me5-base_text": {
+  "aggregate": {
+   "RR@10": 0.47350432480684584,
+   "R@10": 0.6954104718810601,
+   "R@30": 0.805688429217841,
+   "R@100": 0.8880413703943115,
+   "nDCG@10": 0.5266676983689532,
+   "Success@1": 0.3722042663219134
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "dev",
+   "system": "me5-base",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7735,
+   "n_docs": 76536,
+   "seconds": 14.4
+  }
+ },
+ "answer_test_bge-m3_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.5262233458730448,
+   "R@10": 0.761427355105516,
+   "R@30": 0.865240527884206,
+   "R@100": 0.9323815605424801,
+   "nDCG@10": 0.5824355668557015,
+   "Success@1": 0.4138843276774311
+  },
+  "meta": null
+ },
+ "answer_test_bge-m3_text": {
+  "aggregate": {
+   "RR@10": 0.5253332218370532,
+   "R@10": 0.7615398649881409,
+   "R@30": 0.8653530377668309,
+   "R@100": 0.9324940704251049,
+   "nDCG@10": 0.5822130191353562,
+   "Success@1": 0.41288086115672323
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 244.3
+  }
+ },
+ "answer_test_bge-m3_text_xall-en": {
+  "aggregate": {
+   "RR@10": 0.5045093889002519,
+   "R@10": 0.7405961213067812,
+   "R@30": 0.8487569959651178,
+   "R@100": 0.9217753481712873,
+   "nDCG@10": 0.5613439032195657,
+   "Success@1": 0.39242483404919953
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7683,
+   "n_docs": 76536,
+   "seconds": 25.7
+  }
+ },
+ "answer_test_bge-m3_text_xall-orig": {
+  "aggregate": {
+   "RR@10": 0.41818764991353824,
+   "R@10": 0.6446700507614214,
+   "R@30": 0.767148249381752,
+   "R@100": 0.8732266041910712,
+   "nDCG@10": 0.4724191323098988,
+   "Success@1": 0.31654301705063126
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7683,
+   "n_docs": 76536,
+   "seconds": 28.9
+  }
+ },
+ "answer_test_bge-m3_text_xda-en": {
+  "aggregate": {
+   "RR@10": 0.5953048180924287,
+   "R@10": 0.8053097345132744,
+   "R@30": 0.9026548672566371,
+   "R@100": 0.9557522123893806,
+   "nDCG@10": 0.6458743129386029,
+   "Success@1": 0.504424778761062
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 113,
+   "n_docs": 76536,
+   "seconds": 9.2
+  }
+ },
+ "answer_test_bge-m3_text_xda-orig": {
+  "aggregate": {
+   "RR@10": 0.49435313948588283,
+   "R@10": 0.7168141592920354,
+   "R@30": 0.8672566371681416,
+   "R@100": 0.9203539823008849,
+   "nDCG@10": 0.5471830417421009,
+   "Success@1": 0.40707964601769914
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 113,
+   "n_docs": 76536,
+   "seconds": 9.3
+  }
+ },
+ "answer_test_bge-m3_text_xde-en": {
+  "aggregate": {
+   "RR@10": 0.5492029767525519,
+   "R@10": 0.7563739376770539,
+   "R@30": 0.842304060434372,
+   "R@100": 0.9046270066100094,
+   "nDCG@10": 0.5993890737882711,
+   "Success@1": 0.4438149197355996
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1059,
+   "n_docs": 76536,
+   "seconds": 10.7
+  }
+ },
+ "answer_test_bge-m3_text_xde-orig": {
+  "aggregate": {
+   "RR@10": 0.49024536474961405,
+   "R@10": 0.7063267233238905,
+   "R@30": 0.7988668555240793,
+   "R@100": 0.8772426817752597,
+   "nDCG@10": 0.5422570537997682,
+   "Success@1": 0.3871576959395656
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1059,
+   "n_docs": 76536,
+   "seconds": 10.7
+  }
+ },
+ "answer_test_bge-m3_text_xel-en": {
+  "aggregate": {
+   "RR@10": 0.41817455210312354,
+   "R@10": 0.6833976833976834,
+   "R@30": 0.8127413127413128,
+   "R@100": 0.9054054054054054,
+   "nDCG@10": 0.48147524338520564,
+   "Success@1": 0.3005148005148005
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1554,
+   "n_docs": 76536,
+   "seconds": 12.7
+  }
+ },
+ "answer_test_bge-m3_text_xel-orig": {
+  "aggregate": {
+   "RR@10": 0.2769813180527466,
+   "R@10": 0.48326898326898327,
+   "R@30": 0.6364221364221364,
+   "R@100": 0.7940797940797941,
+   "nDCG@10": 0.32576845646241737,
+   "Success@1": 0.19369369369369369
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1554,
+   "n_docs": 76536,
+   "seconds": 13.7
+  }
+ },
+ "answer_test_bge-m3_text_xes-en": {
+  "aggregate": {
+   "RR@10": 0.5057790413014294,
+   "R@10": 0.7422885572139304,
+   "R@30": 0.845771144278607,
+   "R@100": 0.9104477611940298,
+   "nDCG@10": 0.5629383586914641,
+   "Success@1": 0.3890547263681592
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1005,
+   "n_docs": 76536,
+   "seconds": 10.3
+  }
+ },
+ "answer_test_bge-m3_text_xes-orig": {
+  "aggregate": {
+   "RR@10": 0.44905156755903025,
+   "R@10": 0.6796019900497512,
+   "R@30": 0.8059701492537313,
+   "R@100": 0.8875621890547264,
+   "nDCG@10": 0.5045164784961039,
+   "Success@1": 0.3402985074626866
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1005,
+   "n_docs": 76536,
+   "seconds": 10.5
+  }
+ },
+ "answer_test_bge-m3_text_xfr-en": {
+  "aggregate": {
+   "RR@10": 0.512520735020735,
+   "R@10": 0.7558558558558559,
+   "R@30": 0.8693693693693694,
+   "R@100": 0.9261261261261261,
+   "nDCG@10": 0.5708128860930676,
+   "Success@1": 0.4018018018018018
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1110,
+   "n_docs": 76536,
+   "seconds": 10.7
+  }
+ },
+ "answer_test_bge-m3_text_xfr-orig": {
+  "aggregate": {
+   "RR@10": 0.4444054769054769,
+   "R@10": 0.6846846846846847,
+   "R@30": 0.7963963963963964,
+   "R@100": 0.8954954954954955,
+   "nDCG@10": 0.501846677966864,
+   "Success@1": 0.33783783783783783
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1110,
+   "n_docs": 76536,
+   "seconds": 11.2
+  }
+ },
+ "answer_test_bge-m3_text_xit-en": {
+  "aggregate": {
+   "RR@10": 0.5120007617803896,
+   "R@10": 0.7492654260528894,
+   "R@30": 0.8570029382957884,
+   "R@100": 0.9353574926542605,
+   "nDCG@10": 0.56925416126474,
+   "Success@1": 0.39764936336924583
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1021,
+   "n_docs": 76536,
+   "seconds": 10.8
+  }
+ },
+ "answer_test_bge-m3_text_xit-orig": {
+  "aggregate": {
+   "RR@10": 0.428003202586944,
+   "R@10": 0.6611165523996082,
+   "R@30": 0.7855044074436827,
+   "R@100": 0.8834476003917727,
+   "nDCG@10": 0.48379885782527016,
+   "Success@1": 0.32517140058765914
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1021,
+   "n_docs": 76536,
+   "seconds": 10.9
+  }
+ },
+ "answer_test_bge-m3_text_xnl-en": {
+  "aggregate": {
+   "RR@10": 0.6355230445591892,
+   "R@10": 0.8409638554216867,
+   "R@30": 0.9180722891566265,
+   "R@100": 0.9590361445783132,
+   "nDCG@10": 0.6852373871404592,
+   "Success@1": 0.5349397590361445
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 415,
+   "n_docs": 76536,
+   "seconds": 9.1
+  }
+ },
+ "answer_test_bge-m3_text_xnl-orig": {
+  "aggregate": {
+   "RR@10": 0.5574364123159303,
+   "R@10": 0.8096385542168675,
+   "R@30": 0.891566265060241,
+   "R@100": 0.946987951807229,
+   "nDCG@10": 0.6177973179774158,
+   "Success@1": 0.4457831325301205
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 415,
+   "n_docs": 76536,
+   "seconds": 9.2
+  }
+ },
+ "answer_test_bge-m3_text_xpl-en": {
+  "aggregate": {
+   "RR@10": 0.48598326978215245,
+   "R@10": 0.7206703910614525,
+   "R@30": 0.839851024208566,
+   "R@100": 0.9329608938547486,
+   "nDCG@10": 0.5428319587421254,
+   "Success@1": 0.3687150837988827
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 537,
+   "n_docs": 76536,
+   "seconds": 9.4
+  }
+ },
+ "answer_test_bge-m3_text_xpl-orig": {
+  "aggregate": {
+   "RR@10": 0.40293148295941594,
+   "R@10": 0.6424581005586593,
+   "R@30": 0.7635009310986964,
+   "R@100": 0.8808193668528864,
+   "nDCG@10": 0.46079066575569755,
+   "Success@1": 0.2886405959031657
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 537,
+   "n_docs": 76536,
+   "seconds": 9.5
+  }
+ },
+ "answer_test_bge-m3_text_xpt-en": {
+  "aggregate": {
+   "RR@10": 0.5877089947089947,
+   "R@10": 0.8066666666666666,
+   "R@30": 0.88,
+   "R@100": 0.9666666666666667,
+   "nDCG@10": 0.6406712751029472,
+   "Success@1": 0.48
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 150,
+   "n_docs": 76536,
+   "seconds": 8.4
+  }
+ },
+ "answer_test_bge-m3_text_xpt-orig": {
+  "aggregate": {
+   "RR@10": 0.5031534391534391,
+   "R@10": 0.7466666666666667,
+   "R@30": 0.8333333333333334,
+   "R@100": 0.9266666666666666,
+   "nDCG@10": 0.5619834296281109,
+   "Success@1": 0.38
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 150,
+   "n_docs": 76536,
+   "seconds": 8.4
+  }
+ },
+ "answer_test_bge-m3_text_xro-en": {
+  "aggregate": {
+   "RR@10": 0.47723341473341474,
+   "R@10": 0.7019230769230769,
+   "R@30": 0.8333333333333334,
+   "R@100": 0.9134615384615384,
+   "nDCG@10": 0.5316290201627556,
+   "Success@1": 0.3685897435897436
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 312,
+   "n_docs": 76536,
+   "seconds": 8.7
+  }
+ },
+ "answer_test_bge-m3_text_xro-orig": {
+  "aggregate": {
+   "RR@10": 0.4218775437525437,
+   "R@10": 0.6410256410256411,
+   "R@30": 0.782051282051282,
+   "R@100": 0.8942307692307693,
+   "nDCG@10": 0.47423741967107236,
+   "Success@1": 0.3301282051282051
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 312,
+   "n_docs": 76536,
+   "seconds": 8.8
+  }
+ },
+ "answer_test_bm25_body": {
+  "aggregate": {
+   "RR@10": 0.5478196323229164,
+   "R@10": 0.7615398649881409,
+   "R@30": 0.8495712461229703,
+   "R@100": 0.9161649334063127,
+   "nDCG@10": 0.5991807656372776,
+   "Success@1": 0.4475460682357234
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "body",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 69.1
+  }
+ },
+ "answer_test_bm25_full": {
+  "aggregate": {
+   "RR@10": 0.6480412854797091,
+   "R@10": 0.8424557562488597,
+   "R@30": 0.9066776135741653,
+   "R@100": 0.952928297755884,
+   "nDCG@10": 0.695042137733927,
+   "Success@1": 0.551541689472724
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "full",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 80.3
+  }
+ },
+ "answer_test_bm25_header": {
+  "aggregate": {
+   "RR@10": 0.8966512381879104,
+   "R@10": 0.9874110563765737,
+   "R@30": 0.9906039043970079,
+   "R@100": 0.9930669585841999,
+   "nDCG@10": 0.9185604136759128,
+   "Success@1": 0.849480021893815
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "header",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 10.1
+  }
+ },
+ "answer_test_bm25_subject": {
+  "aggregate": {
+   "RR@10": 0.3203861898101088,
+   "R@10": 0.5053822295201605,
+   "R@30": 0.6209633278598796,
+   "R@100": 0.7338076993249407,
+   "nDCG@10": 0.36437298549762787,
+   "Success@1": 0.24201787994891444
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "subject",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 15.0
+  }
+ },
+ "answer_test_bm25_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.5479168295670759,
+   "R@10": 0.7611992945326278,
+   "R@30": 0.8481359849175941,
+   "R@100": 0.9154594660341786,
+   "nDCG@10": 0.5987227919904906,
+   "Success@1": 0.4478197409231892
+  },
+  "meta": null
+ },
+ "answer_test_bm25_text": {
+  "aggregate": {
+   "RR@10": 0.5470328233464522,
+   "R@10": 0.761266192300675,
+   "R@30": 0.8482028826856413,
+   "R@100": 0.9155263638022259,
+   "nDCG@10": 0.5984938121135949,
+   "Success@1": 0.4468162744024813
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 68.4
+  }
+ },
+ "answer_test_bm25_text_xall-en": {
+  "aggregate": {
+   "RR@10": 0.528322063347444,
+   "R@10": 0.7413770662501626,
+   "R@30": 0.8324873096446701,
+   "R@100": 0.9045945594168945,
+   "nDCG@10": 0.5794715389559905,
+   "Success@1": 0.4292594038786932
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7683,
+   "n_docs": 76536,
+   "seconds": 48.3
+  }
+ },
+ "answer_test_bm25_text_xall-orig": {
+  "aggregate": {
+   "RR@10": 0.021319951903708247,
+   "R@10": 0.04841858648965248,
+   "R@30": 0.1059481973187557,
+   "R@100": 0.17493166731745413,
+   "nDCG@10": 0.02759267982066653,
+   "Success@1": 0.012234804112976701
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7683,
+   "n_docs": 76536,
+   "seconds": 24.1
+  }
+ },
+ "answer_test_bm25_text_xda-en": {
+  "aggregate": {
+   "RR@10": 0.5899634780165753,
+   "R@10": 0.7876106194690266,
+   "R@30": 0.8672566371681416,
+   "R@100": 0.9469026548672567,
+   "nDCG@10": 0.6369544939274815,
+   "Success@1": 0.504424778761062
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 113,
+   "n_docs": 76536,
+   "seconds": 10.5
+  }
+ },
+ "answer_test_bm25_text_xda-orig": {
+  "aggregate": {
+   "RR@10": 0.0715936226998174,
+   "R@10": 0.1504424778761062,
+   "R@30": 0.23893805309734514,
+   "R@100": 0.39823008849557523,
+   "nDCG@10": 0.08982542116578844,
+   "Success@1": 0.04424778761061947
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 113,
+   "n_docs": 76536,
+   "seconds": 10.4
+  }
+ },
+ "answer_test_bm25_text_xde-en": {
+  "aggregate": {
+   "RR@10": 0.5555536819701126,
+   "R@10": 0.7450424929178471,
+   "R@30": 0.8158640226628895,
+   "R@100": 0.8819641170915958,
+   "nDCG@10": 0.6012806887401956,
+   "Success@1": 0.465533522190746
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1059,
+   "n_docs": 76536,
+   "seconds": 12.7
+  }
+ },
+ "answer_test_bm25_text_xde-orig": {
+  "aggregate": {
+   "RR@10": 0.042717373383095766,
+   "R@10": 0.08687440982058546,
+   "R@30": 0.1359773371104816,
+   "R@100": 0.210576015108593,
+   "nDCG@10": 0.05306741309016529,
+   "Success@1": 0.025495750708215296
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1059,
+   "n_docs": 76536,
+   "seconds": 10.0
+  }
+ },
+ "answer_test_bm25_text_xel-en": {
+  "aggregate": {
+   "RR@10": 0.46303446303446305,
+   "R@10": 0.6776061776061776,
+   "R@30": 0.7915057915057915,
+   "R@100": 0.8886743886743886,
+   "nDCG@10": 0.5144888254454634,
+   "Success@1": 0.36293436293436293
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1554,
+   "n_docs": 76536,
+   "seconds": 17.0
+  }
+ },
+ "answer_test_bm25_text_xel-orig": {
+  "aggregate": {
+   "RR@10": 0.004758840473126187,
+   "R@10": 0.025096525096525095,
+   "R@30": 0.1833976833976834,
+   "R@100": 0.2754182754182754,
+   "nDCG@10": 0.00922371335315396,
+   "Success@1": 0.001287001287001287
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1554,
+   "n_docs": 76536,
+   "seconds": 10.3
+  }
+ },
+ "answer_test_bm25_text_xes-en": {
+  "aggregate": {
+   "RR@10": 0.5147401879491431,
+   "R@10": 0.7243781094527363,
+   "R@30": 0.8149253731343283,
+   "R@100": 0.8845771144278607,
+   "nDCG@10": 0.5653783940735826,
+   "Success@1": 0.4129353233830846
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1005,
+   "n_docs": 76536,
+   "seconds": 12.6
+  }
+ },
+ "answer_test_bm25_text_xes-orig": {
+  "aggregate": {
+   "RR@10": 0.001990049751243781,
+   "R@10": 0.001990049751243781,
+   "R@30": 0.011940298507462687,
+   "R@100": 0.03482587064676617,
+   "nDCG@10": 0.001990049751243781,
+   "Success@1": 0.001990049751243781
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1005,
+   "n_docs": 76536,
+   "seconds": 10.9
+  }
+ },
+ "answer_test_bm25_text_xfr-en": {
+  "aggregate": {
+   "RR@10": 0.5373770198770199,
+   "R@10": 0.7639639639639639,
+   "R@30": 0.8432432432432433,
+   "R@100": 0.9108108108108108,
+   "nDCG@10": 0.5916107423720928,
+   "Success@1": 0.436036036036036
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1110,
+   "n_docs": 76536,
+   "seconds": 13.1
+  }
+ },
+ "answer_test_bm25_text_xfr-orig": {
+  "aggregate": {
+   "RR@10": 0.00011261261261261261,
+   "R@10": 0.0009009009009009009,
+   "R@30": 0.012612612612612612,
+   "R@100": 0.04504504504504504,
+   "nDCG@10": 0.00028420259169885474,
+   "Success@1": 0.0
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1110,
+   "n_docs": 76536,
+   "seconds": 11.8
+  }
+ },
+ "answer_test_bm25_text_xit-en": {
+  "aggregate": {
+   "RR@10": 0.5621449559255632,
+   "R@10": 0.7541625857002938,
+   "R@30": 0.8550440744368266,
+   "R@100": 0.9147894221351616,
+   "nDCG@10": 0.6079189746331678,
+   "Success@1": 0.4779627815866797
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1021,
+   "n_docs": 76536,
+   "seconds": 13.4
+  }
+ },
+ "answer_test_bm25_text_xit-orig": {
+  "aggregate": {
+   "RR@10": 0.011025216485549492,
+   "R@10": 0.02840352595494613,
+   "R@30": 0.06562193927522038,
+   "R@100": 0.14691478942213515,
+   "nDCG@10": 0.014993799299441056,
+   "Success@1": 0.005876591576885406
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1021,
+   "n_docs": 76536,
+   "seconds": 10.6
+  }
+ },
+ "answer_test_bm25_text_xnl-en": {
+  "aggregate": {
+   "RR@10": 0.6080101357812201,
+   "R@10": 0.8144578313253013,
+   "R@30": 0.8987951807228916,
+   "R@100": 0.9518072289156626,
+   "nDCG@10": 0.6582770685135293,
+   "Success@1": 0.4987951807228916
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 415,
+   "n_docs": 76536,
+   "seconds": 10.2
+  }
+ },
+ "answer_test_bm25_text_xnl-orig": {
+  "aggregate": {
+   "RR@10": 0.017137119908204244,
+   "R@10": 0.043373493975903614,
+   "R@30": 0.05783132530120482,
+   "R@100": 0.09156626506024096,
+   "nDCG@10": 0.02322886320988277,
+   "Success@1": 0.00963855421686747
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 415,
+   "n_docs": 76536,
+   "seconds": 9.2
+  }
+ },
+ "answer_test_bm25_text_xpl-en": {
+  "aggregate": {
+   "RR@10": 0.5141297922024178,
+   "R@10": 0.7635009310986964,
+   "R@30": 0.8472998137802608,
+   "R@100": 0.9199255121042831,
+   "nDCG@10": 0.5736993204819985,
+   "Success@1": 0.4022346368715084
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 537,
+   "n_docs": 76536,
+   "seconds": 11.0
+  }
+ },
+ "answer_test_bm25_text_xpl-orig": {
+  "aggregate": {
+   "RR@10": 0.08305104785551713,
+   "R@10": 0.17318435754189945,
+   "R@30": 0.23649906890130354,
+   "R@100": 0.35195530726256985,
+   "nDCG@10": 0.10412448304054177,
+   "Success@1": 0.05027932960893855
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 537,
+   "n_docs": 76536,
+   "seconds": 8.8
+  }
+ },
+ "answer_test_bm25_text_xpt-en": {
+  "aggregate": {
+   "RR@10": 0.605441798941799,
+   "R@10": 0.8133333333333334,
+   "R@30": 0.8866666666666667,
+   "R@100": 0.9266666666666666,
+   "nDCG@10": 0.6561959692532947,
+   "Success@1": 0.49333333333333335
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 150,
+   "n_docs": 76536,
+   "seconds": 9.0
+  }
+ },
+ "answer_test_bm25_text_xpt-orig": {
+  "aggregate": {
+   "RR@10": 0.025833333333333333,
+   "R@10": 0.06,
+   "R@30": 0.08,
+   "R@100": 0.16,
+   "nDCG@10": 0.033394433807627716,
+   "Success@1": 0.02
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 150,
+   "n_docs": 76536,
+   "seconds": 8.4
+  }
+ },
+ "answer_test_bm25_text_xro-en": {
+  "aggregate": {
+   "RR@10": 0.502313542938543,
+   "R@10": 0.7564102564102564,
+   "R@30": 0.8717948717948718,
+   "R@100": 0.9294871794871795,
+   "nDCG@10": 0.562932855461892,
+   "Success@1": 0.38782051282051283
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 312,
+   "n_docs": 76536,
+   "seconds": 9.6
+  }
+ },
+ "answer_test_bm25_text_xro-orig": {
+  "aggregate": {
+   "RR@10": 0.010954670329670329,
+   "R@10": 0.02564102564102564,
+   "R@30": 0.057692307692307696,
+   "R@100": 0.08653846153846154,
+   "nDCG@10": 0.014372147872541654,
+   "Success@1": 0.00641025641025641
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 312,
+   "n_docs": 76536,
+   "seconds": 8.6
+  }
+ },
+ "answer_test_bm25tuned_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.5612289062070124,
+   "R@10": 0.7723742626041477,
+   "R@30": 0.8629143100407468,
+   "R@100": 0.9276379006264064,
+   "nDCG@10": 0.6117116851588811,
+   "Success@1": 0.46077358146323666
+  },
+  "meta": null
+ },
+ "answer_test_bm25tuned_text": {
+  "aggregate": {
+   "RR@10": 0.5604359070149985,
+   "R@10": 0.7724867724867724,
+   "R@30": 0.8629812078087941,
+   "R@100": 0.927659186279876,
+   "nDCG@10": 0.6114952494928747,
+   "Success@1": 0.459861339171684
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.9,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 65.2
+  }
+ },
+ "answer_test_idoracle_full": {
+  "aggregate": {
+   "RR@10": 0.976990208599404,
+   "R@10": 0.990330231709542,
+   "R@30": 0.990330231709542,
+   "R@100": 0.990330231709542,
+   "nDCG@10": 0.9804292748656384,
+   "Success@1": 0.9656084656084656
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "idoracle",
+   "field": "full",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 1.0
+  }
+ },
+ "answer_test_idoracle_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.0,
+   "R@10": 0.0,
+   "R@30": 0.0,
+   "R@100": 0.0,
+   "nDCG@10": 0.0,
+   "Success@1": 0.0
+  },
+  "meta": null
+ },
+ "answer_test_idoracle_text": {
+  "aggregate": {
+   "RR@10": 0.0,
+   "R@10": 0.0,
+   "R@30": 0.0,
+   "R@100": 0.0,
+   "nDCG@10": 0.0,
+   "Success@1": 0.0
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "idoracle",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 0.8
+  }
+ },
+ "answer_test_me5-base-ft2019_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.5713440080161482,
+   "R@10": 0.7931885908897403,
+   "R@30": 0.8885483184333759,
+   "R@100": 0.9525327588545979,
+   "nDCG@10": 0.6244255318318407,
+   "Success@1": 0.4663382594417077
+  },
+  "meta": null
+ },
+ "answer_test_me5-base-ft2019_text": {
+  "aggregate": {
+   "RR@10": 0.5708104548758627,
+   "R@10": 0.7934683451924831,
+   "R@30": 0.8887976646597336,
+   "R@100": 0.9526546250684181,
+   "nDCG@10": 0.6243409404606493,
+   "Success@1": 0.4656996898376209
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 17.1
+  }
+ },
+ "answer_test_me5-base-ft_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.4335536470867615,
+   "R@10": 0.6179012345679012,
+   "R@30": 0.7161871546929017,
+   "R@100": 0.8104603782764702,
+   "nDCG@10": 0.4773585438391281,
+   "Success@1": 0.3499361430395913
+  },
+  "meta": null
+ },
+ "answer_test_me5-base-ft_text": {
+  "aggregate": {
+   "RR@10": 0.43298056344717534,
+   "R@10": 0.6180441525269111,
+   "R@30": 0.7165663200145959,
+   "R@100": 0.810709724502828,
+   "nDCG@10": 0.4772698223567966,
+   "Success@1": 0.3492975734355045
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 16.4
+  }
+ },
+ "answer_test_me5-base-ftdm_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.6326525544232167,
+   "R@10": 0.8513957307060755,
+   "R@30": 0.93172919034988,
+   "R@100": 0.9757252326217843,
+   "nDCG@10": 0.6853769104461667,
+   "Success@1": 0.5240831964969896
+  },
+  "meta": null
+ },
+ "answer_test_me5-base-ftdm_text": {
+  "aggregate": {
+   "RR@10": 0.6322618106416683,
+   "R@10": 0.8518518518518519,
+   "R@30": 0.9320379492793286,
+   "R@100": 0.976099251961321,
+   "nDCG@10": 0.6853113557020764,
+   "Success@1": 0.5236270753512133
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 16.7
+  }
+ },
+ "answer_test_me5-base_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.490985344755186,
+   "R@10": 0.7183695189442315,
+   "R@30": 0.8201301465669282,
+   "R@100": 0.9023231770358207,
+   "nDCG@10": 0.5452761929771179,
+   "Success@1": 0.38587848932676516
+  },
+  "meta": null
+ },
+ "answer_test_me5-base_text": {
+  "aggregate": {
+   "RR@10": 0.4904895845098363,
+   "R@10": 0.7183908045977011,
+   "R@30": 0.8201970443349754,
+   "R@100": 0.9023900748038679,
+   "nDCG@10": 0.5451497577005802,
+   "Success@1": 0.38569604086845466
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-base",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 88.7
+  }
+ },
+ "answer_test_me5-large_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.4450876838602619,
+   "R@10": 0.6745210727969349,
+   "R@30": 0.78876421577571,
+   "R@100": 0.8831766147858102,
+   "nDCG@10": 0.4995624554353202,
+   "Success@1": 0.3410873928115307
+  },
+  "meta": null
+ },
+ "answer_test_me5-large_text": {
+  "aggregate": {
+   "RR@10": 0.4442455973449405,
+   "R@10": 0.6746031746031746,
+   "R@30": 0.7888159095055647,
+   "R@100": 0.8832329866812625,
+   "nDCG@10": 0.49939423379332815,
+   "Success@1": 0.3401751505199781
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 219.0
+  }
+ },
+ "answer_test_me5-large_text_xall-en": {
+  "aggregate": {
+   "RR@10": 0.41600937133932053,
+   "R@10": 0.6444097357802941,
+   "R@30": 0.7622022647403358,
+   "R@100": 0.8646362098138748,
+   "nDCG@10": 0.4705561409500349,
+   "Success@1": 0.31524144214499544
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7683,
+   "n_docs": 76536,
+   "seconds": 25.0
+  }
+ },
+ "answer_test_me5-large_text_xall-orig": {
+  "aggregate": {
+   "RR@10": 0.33251050040390145,
+   "R@10": 0.5454900429519719,
+   "R@30": 0.6643238318365222,
+   "R@100": 0.7843290381361447,
+   "nDCG@10": 0.3833103565625934,
+   "Success@1": 0.2398802551086815
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 7683,
+   "n_docs": 76536,
+   "seconds": 27.0
+  }
+ },
+ "answer_test_me5-large_text_xda-en": {
+  "aggregate": {
+   "RR@10": 0.4709299058856581,
+   "R@10": 0.7433628318584071,
+   "R@30": 0.8495575221238938,
+   "R@100": 0.9380530973451328,
+   "nDCG@10": 0.5364320726339401,
+   "Success@1": 0.34513274336283184
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 113,
+   "n_docs": 76536,
+   "seconds": 8.5
+  }
+ },
+ "answer_test_me5-large_text_xda-orig": {
+  "aggregate": {
+   "RR@10": 0.3834632673128249,
+   "R@10": 0.6637168141592921,
+   "R@30": 0.831858407079646,
+   "R@100": 0.8849557522123894,
+   "nDCG@10": 0.4502615712673982,
+   "Success@1": 0.26548672566371684
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 113,
+   "n_docs": 76536,
+   "seconds": 9.1
+  }
+ },
+ "answer_test_me5-large_text_xde-en": {
+  "aggregate": {
+   "RR@10": 0.4591741984801475,
+   "R@10": 0.6789423984891407,
+   "R@30": 0.7762039660056658,
+   "R@100": 0.8630783758262511,
+   "nDCG@10": 0.5116537093909951,
+   "Success@1": 0.3635505193578848
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1059,
+   "n_docs": 76536,
+   "seconds": 9.9
+  }
+ },
+ "answer_test_me5-large_text_xde-orig": {
+  "aggregate": {
+   "RR@10": 0.3717530764272974,
+   "R@10": 0.591123701605288,
+   "R@30": 0.6940509915014165,
+   "R@100": 0.7913125590179415,
+   "nDCG@10": 0.4240151478923552,
+   "Success@1": 0.2757318224740321
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1059,
+   "n_docs": 76536,
+   "seconds": 10.3
+  }
+ },
+ "answer_test_me5-large_text_xel-en": {
+  "aggregate": {
+   "RR@10": 0.3234803681232253,
+   "R@10": 0.5508365508365508,
+   "R@30": 0.6904761904761905,
+   "R@100": 0.8166023166023166,
+   "nDCG@10": 0.37743355012319296,
+   "Success@1": 0.22844272844272845
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1554,
+   "n_docs": 76536,
+   "seconds": 11.6
+  }
+ },
+ "answer_test_me5-large_text_xel-orig": {
+  "aggregate": {
+   "RR@10": 0.21434342505771078,
+   "R@10": 0.3893178893178893,
+   "R@30": 0.5186615186615187,
+   "R@100": 0.6808236808236808,
+   "nDCG@10": 0.25577793979162594,
+   "Success@1": 0.14414414414414414
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1554,
+   "n_docs": 76536,
+   "seconds": 12.3
+  }
+ },
+ "answer_test_me5-large_text_xes-en": {
+  "aggregate": {
+   "RR@10": 0.4172415699281371,
+   "R@10": 0.6447761194029851,
+   "R@30": 0.7691542288557214,
+   "R@100": 0.8716417910447761,
+   "nDCG@10": 0.4714217375168591,
+   "Success@1": 0.3174129353233831
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1005,
+   "n_docs": 76536,
+   "seconds": 10.0
+  }
+ },
+ "answer_test_me5-large_text_xes-orig": {
+  "aggregate": {
+   "RR@10": 0.3726293137487167,
+   "R@10": 0.6049751243781094,
+   "R@30": 0.708457711442786,
+   "R@100": 0.8169154228855722,
+   "nDCG@10": 0.4283237782913164,
+   "Success@1": 0.26666666666666666
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1005,
+   "n_docs": 76536,
+   "seconds": 10.1
+  }
+ },
+ "answer_test_me5-large_text_xfr-en": {
+  "aggregate": {
+   "RR@10": 0.4314128414128414,
+   "R@10": 0.6666666666666666,
+   "R@30": 0.7810810810810811,
+   "R@100": 0.8810810810810811,
+   "nDCG@10": 0.4880106799100857,
+   "Success@1": 0.3207207207207207
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1110,
+   "n_docs": 76536,
+   "seconds": 10.3
+  }
+ },
+ "answer_test_me5-large_text_xfr-orig": {
+  "aggregate": {
+   "RR@10": 0.34508866008866007,
+   "R@10": 0.5612612612612613,
+   "R@30": 0.6765765765765765,
+   "R@100": 0.7963963963963964,
+   "nDCG@10": 0.3970580251414406,
+   "Success@1": 0.24324324324324326
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1110,
+   "n_docs": 76536,
+   "seconds": 10.6
+  }
+ },
+ "answer_test_me5-large_text_xit-en": {
+  "aggregate": {
+   "RR@10": 0.4375079676010136,
+   "R@10": 0.6552399608227228,
+   "R@30": 0.7874632713026445,
+   "R@100": 0.8756121449559255,
+   "nDCG@10": 0.48971997414138463,
+   "Success@1": 0.3379040156709109
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1021,
+   "n_docs": 76536,
+   "seconds": 10.5
+  }
+ },
+ "answer_test_me5-large_text_xit-orig": {
+  "aggregate": {
+   "RR@10": 0.35718871943161856,
+   "R@10": 0.5700293829578844,
+   "R@30": 0.6973555337904016,
+   "R@100": 0.8060724779627816,
+   "nDCG@10": 0.4079742506537711,
+   "Success@1": 0.2624877571008815
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 1021,
+   "n_docs": 76536,
+   "seconds": 10.5
+  }
+ },
+ "answer_test_me5-large_text_xnl-en": {
+  "aggregate": {
+   "RR@10": 0.5256033658443297,
+   "R@10": 0.7373493975903614,
+   "R@30": 0.8361445783132531,
+   "R@100": 0.908433734939759,
+   "nDCG@10": 0.5762828610802205,
+   "Success@1": 0.43132530120481927
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 415,
+   "n_docs": 76536,
+   "seconds": 8.7
+  }
+ },
+ "answer_test_me5-large_text_xnl-orig": {
+  "aggregate": {
+   "RR@10": 0.43526008797093135,
+   "R@10": 0.6506024096385542,
+   "R@30": 0.7734939759036145,
+   "R@100": 0.8650602409638555,
+   "nDCG@10": 0.48698917816125853,
+   "Success@1": 0.3325301204819277
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 415,
+   "n_docs": 76536,
+   "seconds": 8.9
+  }
+ },
+ "answer_test_me5-large_text_xpl-en": {
+  "aggregate": {
+   "RR@10": 0.388401909491295,
+   "R@10": 0.6461824953445066,
+   "R@30": 0.750465549348231,
+   "R@100": 0.8659217877094972,
+   "nDCG@10": 0.4496460283925146,
+   "Success@1": 0.28305400372439476
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 537,
+   "n_docs": 76536,
+   "seconds": 9.1
+  }
+ },
+ "answer_test_me5-large_text_xpl-orig": {
+  "aggregate": {
+   "RR@10": 0.3161767314001951,
+   "R@10": 0.5549348230912476,
+   "R@30": 0.6759776536312849,
+   "R@100": 0.7970204841713222,
+   "nDCG@10": 0.3730630348742222,
+   "Success@1": 0.21973929236499068
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 537,
+   "n_docs": 76536,
+   "seconds": 9.1
+  }
+ },
+ "answer_test_me5-large_text_xpt-en": {
+  "aggregate": {
+   "RR@10": 0.5072671957671957,
+   "R@10": 0.7333333333333333,
+   "R@30": 0.8133333333333334,
+   "R@100": 0.9133333333333333,
+   "nDCG@10": 0.5614565180445006,
+   "Success@1": 0.4
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 150,
+   "n_docs": 76536,
+   "seconds": 8.3
+  }
+ },
+ "answer_test_me5-large_text_xpt-orig": {
+  "aggregate": {
+   "RR@10": 0.431521164021164,
+   "R@10": 0.6066666666666667,
+   "R@30": 0.7066666666666667,
+   "R@100": 0.84,
+   "nDCG@10": 0.47299437338918876,
+   "Success@1": 0.36
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 150,
+   "n_docs": 76536,
+   "seconds": 8.3
+  }
+ },
+ "answer_test_me5-large_text_xro-en": {
+  "aggregate": {
+   "RR@10": 0.37979497354497355,
+   "R@10": 0.6057692307692307,
+   "R@30": 0.7339743589743589,
+   "R@100": 0.8717948717948718,
+   "nDCG@10": 0.43423031097492415,
+   "Success@1": 0.2724358974358974
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 312,
+   "n_docs": 76536,
+   "seconds": 8.4
+  }
+ },
+ "answer_test_me5-large_text_xro-orig": {
+  "aggregate": {
+   "RR@10": 0.3157000407000407,
+   "R@10": 0.5544871794871795,
+   "R@30": 0.6794871794871795,
+   "R@100": 0.8301282051282052,
+   "nDCG@10": 0.37188397509742616,
+   "Success@1": 0.22435897435897437
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 312,
+   "n_docs": 76536,
+   "seconds": 8.6
+  }
+ },
+ "answer_test_qwen3-emb-8b_text": {
+  "aggregate": {
+   "RR@10": 0.7135063625279826,
+   "R@10": 0.9030286444079547,
+   "R@30": 0.9542054369640577,
+   "R@100": 0.9794745484400657,
+   "nDCG@10": 0.7596330928531057,
+   "Success@1": 0.6130268199233716
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "test",
+   "system": "qwen3-emb-8b",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 10962,
+   "n_docs": 76536,
+   "seconds": 238.1
+  }
+ },
+ "answer_test_rerank_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.5367694097647573,
+   "R@10": 0.7879279936751201,
+   "R@30": 0.8481359849175941,
+   "R@100": 0.9154594660341786,
+   "nDCG@10": 0.5970680540096731,
+   "Success@1": 0.4157088122605364
+  },
+  "meta": null
+ },
+ "answer_test_rerank_text": {
+  "aggregate": {
+   "RR@10": 0.5361863349000733,
+   "R@10": 0.7879948914431673,
+   "R@30": 0.8482028826856413,
+   "R@100": 0.9155263638022259,
+   "nDCG@10": 0.5969192631688504,
+   "Success@1": 0.4152526911147601
+  },
+  "meta": {
+   "first_stage": "experiments/v1.0/runs/answer_test_bm25_text.run",
+   "model": "BAAI/bge-reranker-v2-m3",
+   "depth": 30,
+   "max_length": 1024,
+   "seconds": 1712.4,
+   "query_coverage": 1.0
+  }
+ },
+ "answer_test_rrf_text.lenient": {
+  "aggregate": {
+   "RR@10": 0.5889383382131056,
+   "R@10": 0.8176214802651584,
+   "R@30": 0.8984917594112997,
+   "R@100": 0.9493492671653591,
+   "nDCG@10": 0.6436441531881344,
+   "Success@1": 0.4776500638569604
+  },
+  "meta": null
+ },
+ "answer_test_rrf_text": {
+  "aggregate": {
+   "RR@10": 0.5880200143062759,
+   "R@10": 0.8178252143769386,
+   "R@30": 0.8985586571793468,
+   "R@100": 0.949461777047984,
+   "nDCG@10": 0.6434414991436811,
+   "Success@1": 0.476464148877942
+  },
+  "meta": {
+   "runs": [
+    "experiments/v1.0/runs/answer_test_bm25_text.run",
+    "experiments/v1.0/runs/answer_test_bge-m3_text.run"
+   ],
+   "rrf_k": 60,
+   "seconds": 1.8,
+   "query_coverage": 1.0
+  }
+ },
+ "answer_train_bm25_text": {
+  "aggregate": {
+   "RR@10": 0.4238474476216038,
+   "R@10": 0.6273233577132121,
+   "R@30": 0.7005971951955982,
+   "R@100": 0.7005971951955982,
+   "nDCG@10": 0.47251782506277495,
+   "Success@1": 0.3326343689190096
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "answer",
+   "split": "train",
+   "system": "bm25",
+   "field": "text",
+   "k": 20,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 59612,
+   "n_docs": 76536,
+   "seconds": 264.3
+  }
+ },
+ "cite_dev_bge-m3_text": {
+  "aggregate": {
+   "RR@10": 0.3837168869777565,
+   "R@10": 0.5534559643255295,
+   "R@30": 0.6795986622073579,
+   "R@100": 0.7933110367892976,
+   "nDCG@10": 0.4068464431597209,
+   "Success@1": 0.27759197324414714
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "dev",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 299,
+   "n_docs": 76536,
+   "seconds": 23.6
+  }
+ },
+ "cite_dev_bge-m3q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5647780962998354,
+   "R@10": 0.7942028985507247,
+   "R@30": 0.8731326644370122,
+   "R@100": 0.9175027870680044,
+   "nDCG@10": 0.6062394808160598,
+   "Success@1": 0.44481605351170567
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "dev",
+   "system": "bge-m3q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 299,
+   "n_docs": 76536,
+   "seconds": 3.3
+  }
+ },
+ "cite_dev_bm25_text": {
+  "aggregate": {
+   "RR@10": 0.37610951850082286,
+   "R@10": 0.5163879598662208,
+   "R@30": 0.6171125975473802,
+   "R@100": 0.7392976588628762,
+   "nDCG@10": 0.3955135277823455,
+   "Success@1": 0.29431438127090304
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 299,
+   "n_docs": 76536,
+   "seconds": 23.9
+  }
+ },
+ "cite_dev_bm25q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5692692573127356,
+   "R@10": 0.7424191750278706,
+   "R@30": 0.8445373467112598,
+   "R@100": 0.9135451505016722,
+   "nDCG@10": 0.5936462176981991,
+   "Success@1": 0.45484949832775917
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "dev",
+   "system": "bm25q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 299,
+   "n_docs": 76536,
+   "seconds": 9.6
+  }
+ },
+ "cite_dev_me5-base_text": {
+  "aggregate": {
+   "RR@10": 0.3413521261347348,
+   "R@10": 0.49431438127090305,
+   "R@30": 0.6010590858416945,
+   "R@100": 0.7175585284280936,
+   "nDCG@10": 0.3650850568567714,
+   "Success@1": 0.24749163879598662
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "dev",
+   "system": "me5-base",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 299,
+   "n_docs": 76536,
+   "seconds": 22.8
+  }
+ },
+ "cite_dev_me5-large_text": {
+  "aggregate": {
+   "RR@10": 0.32004034612730264,
+   "R@10": 0.506911928651059,
+   "R@30": 0.6461538461538461,
+   "R@100": 0.7584169453734672,
+   "nDCG@10": 0.35000511760801256,
+   "Success@1": 0.2140468227424749
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "dev",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 299,
+   "n_docs": 76536,
+   "seconds": 23.5
+  }
+ },
+ "cite_dev_qwen3-emb-8b_text": {
+  "aggregate": {
+   "RR@10": 0.44883075861336735,
+   "R@10": 0.6254180602006689,
+   "R@30": 0.7565217391304347,
+   "R@100": 0.8609253065774806,
+   "nDCG@10": 0.471435546166485,
+   "Success@1": 0.34448160535117056
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "dev",
+   "system": "qwen3-emb-8b",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 299,
+   "n_docs": 76536,
+   "seconds": 35.9
+  }
+ },
+ "cite_dev_rrf_text": {
+  "aggregate": {
+   "RR@10": 0.4049729256250995,
+   "R@10": 0.5610925306577481,
+   "R@30": 0.7066332218506132,
+   "R@100": 0.8149386845039018,
+   "nDCG@10": 0.42603625378123866,
+   "Success@1": 0.29431438127090304
+  },
+  "meta": {
+   "runs": [
+    "experiments/v1.0/runs/cite_dev_bm25_text.run",
+    "experiments/v1.0/runs/cite_dev_bge-m3_text.run"
+   ],
+   "rrf_k": 60,
+   "seconds": 0.1,
+   "query_coverage": 1.0
+  }
+ },
+ "cite_test_bge-m3_text": {
+  "aggregate": {
+   "RR@10": 0.40183281224947887,
+   "R@10": 0.5825998075998076,
+   "R@30": 0.7284151034151034,
+   "R@100": 0.838961038961039,
+   "nDCG@10": 0.42017292814180274,
+   "Success@1": 0.28535353535353536
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 396,
+   "n_docs": 76536,
+   "seconds": 29.0
+  }
+ },
+ "cite_test_bge-m3q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5696939634439635,
+   "R@10": 0.7444925444925445,
+   "R@30": 0.8511423761423761,
+   "R@100": 0.9261724386724387,
+   "nDCG@10": 0.5880512933058947,
+   "Success@1": 0.43686868686868685
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "test",
+   "system": "bge-m3q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 396,
+   "n_docs": 76536,
+   "seconds": 93.7
+  }
+ },
+ "cite_test_bm25_text": {
+  "aggregate": {
+   "RR@10": 0.4016083453583454,
+   "R@10": 0.5431637806637807,
+   "R@30": 0.6742544492544492,
+   "R@100": 0.7811628186628187,
+   "nDCG@10": 0.4147094911894969,
+   "Success@1": 0.3005050505050505
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 396,
+   "n_docs": 76536,
+   "seconds": 30.5
+  }
+ },
+ "cite_test_bm25q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5637926887926887,
+   "R@10": 0.7239959114959115,
+   "R@30": 0.8186928811928812,
+   "R@100": 0.8894901394901394,
+   "nDCG@10": 0.5796477833423392,
+   "Success@1": 0.44191919191919193
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "test",
+   "system": "bm25q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 396,
+   "n_docs": 76536,
+   "seconds": 10.4
+  }
+ },
+ "cite_test_bm25tuned_text": {
+  "aggregate": {
+   "RR@10": 0.4047358505691839,
+   "R@10": 0.5517676767676768,
+   "R@30": 0.6691438191438192,
+   "R@100": 0.7827621452621453,
+   "nDCG@10": 0.42286494884885356,
+   "Success@1": 0.30303030303030304
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.9,
+   "n_queries": 396,
+   "n_docs": 76536,
+   "seconds": 31.0
+  }
+ },
+ "cite_test_me5-base-ft_text": {
+  "aggregate": {
+   "RR@10": 0.24554373096039764,
+   "R@10": 0.35913900913900915,
+   "R@30": 0.4984487734487734,
+   "R@100": 0.6412337662337662,
+   "nDCG@10": 0.25797559054326685,
+   "Success@1": 0.16666666666666666
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "test",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 396,
+   "n_docs": 76536,
+   "seconds": 25.4
+  }
+ },
+ "cite_test_me5-base-ftdm_text": {
+  "aggregate": {
+   "RR@10": 0.3034561888728555,
+   "R@10": 0.4973124098124098,
+   "R@30": 0.6498797498797498,
+   "R@100": 0.8161916786916786,
+   "nDCG@10": 0.33618416952936886,
+   "Success@1": 0.1919191919191919
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "test",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 396,
+   "n_docs": 76536,
+   "seconds": 26.2
+  }
+ },
+ "cite_test_me5-base_text": {
+  "aggregate": {
+   "RR@10": 0.36776595318261984,
+   "R@10": 0.5148148148148148,
+   "R@30": 0.6766835016835017,
+   "R@100": 0.7807479557479557,
+   "nDCG@10": 0.37827920778402835,
+   "Success@1": 0.2727272727272727
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "test",
+   "system": "me5-base",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 396,
+   "n_docs": 76536,
+   "seconds": 27.7
+  }
+ },
+ "cite_test_me5-large_text": {
+  "aggregate": {
+   "RR@10": 0.3260401635401635,
+   "R@10": 0.4898148148148148,
+   "R@30": 0.6418350168350168,
+   "R@100": 0.7649230399230399,
+   "nDCG@10": 0.3412263086971979,
+   "Success@1": 0.21717171717171718
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 396,
+   "n_docs": 76536,
+   "seconds": 28.7
+  }
+ },
+ "cite_test_qwen3-emb-8b_text": {
+  "aggregate": {
+   "RR@10": 0.47114698573031905,
+   "R@10": 0.6382034632034632,
+   "R@30": 0.7968193843193843,
+   "R@100": 0.9012205387205388,
+   "nDCG@10": 0.4839922131455564,
+   "Success@1": 0.35353535353535354
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "test",
+   "system": "qwen3-emb-8b",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 396,
+   "n_docs": 76536,
+   "seconds": 46.6
+  }
+ },
+ "cite_test_rerank_text": {
+  "aggregate": {
+   "RR@10": 0.3681447410614077,
+   "R@10": 0.5703342953342952,
+   "R@30": 0.6742544492544492,
+   "R@100": 0.7811628186628187,
+   "nDCG@10": 0.3998023241608897,
+   "Success@1": 0.2474747474747475
+  },
+  "meta": {
+   "first_stage": "experiments/v1.0/runs/cite_test_bm25_text.run",
+   "model": "BAAI/bge-reranker-v2-m3",
+   "depth": 30,
+   "max_length": 1024,
+   "seconds": 70.1,
+   "query_coverage": 1.0
+  }
+ },
+ "cite_test_rrf_text": {
+  "aggregate": {
+   "RR@10": 0.44161756453423123,
+   "R@10": 0.6028679653679654,
+   "R@30": 0.7549963924963926,
+   "R@100": 0.8497053872053872,
+   "nDCG@10": 0.45897839005228175,
+   "Success@1": 0.32575757575757575
+  },
+  "meta": {
+   "runs": [
+    "experiments/v1.0/runs/cite_test_bm25_text.run",
+    "experiments/v1.0/runs/cite_test_bge-m3_text.run"
+   ],
+   "rrf_k": 60,
+   "seconds": 0.1,
+   "query_coverage": 1.0
+  }
+ },
+ "cite_train_bge-m3_text": {
+  "aggregate": {
+   "RR@10": 0.4536534904201482,
+   "R@10": 0.6506751137761537,
+   "R@30": 0.7843151924586264,
+   "R@100": 0.8776759492306556,
+   "nDCG@10": 0.4847758645148203,
+   "Success@1": 0.33820015927794
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "train",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 3767,
+   "n_docs": 76536,
+   "seconds": 254.5
+  }
+ },
+ "cite_train_bge-m3q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5478052932525989,
+   "R@10": 0.7405084271563682,
+   "R@30": 0.8453863504660244,
+   "R@100": 0.9131586920136373,
+   "nDCG@10": 0.5776688021312171,
+   "Success@1": 0.42659941598088663
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "train",
+   "system": "bge-m3q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 3767,
+   "n_docs": 76536,
+   "seconds": 42.8,
+   "q2q_deepened": 79
+  }
+ },
+ "cite_train_bm25_text": {
+  "aggregate": {
+   "RR@10": 0.41122951614058595,
+   "R@10": 0.5903859795167374,
+   "R@30": 0.7214662480242726,
+   "R@100": 0.809859590574525,
+   "nDCG@10": 0.4380939588934321,
+   "Success@1": 0.30846827714361563
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "train",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 3767,
+   "n_docs": 76536,
+   "seconds": 305.6
+  }
+ },
+ "cite_train_bm25q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5128256665023323,
+   "R@10": 0.6911331820718638,
+   "R@30": 0.8035976932420424,
+   "R@100": 0.8838724787368829,
+   "nDCG@10": 0.5380326417180094,
+   "Success@1": 0.3995221661799841
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "train",
+   "system": "bm25q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 3767,
+   "n_docs": 76536,
+   "seconds": 54.0,
+   "q2q_deepened": 68
+  }
+ },
+ "cite_train_me5-base_text": {
+  "aggregate": {
+   "RR@10": 0.37331209627466594,
+   "R@10": 0.5511376939945078,
+   "R@30": 0.6886544802487801,
+   "R@100": 0.7974939100915727,
+   "nDCG@10": 0.3996224801437124,
+   "Success@1": 0.2713034244757101
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "train",
+   "system": "me5-base",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 3767,
+   "n_docs": 76536,
+   "seconds": 252.2
+  }
+ },
+ "cite_train_me5-large_text": {
+  "aggregate": {
+   "RR@10": 0.3815174384062093,
+   "R@10": 0.5706010127261241,
+   "R@30": 0.7100641385797655,
+   "R@100": 0.819614108214367,
+   "nDCG@10": 0.4114651671328627,
+   "Success@1": 0.27608176267586937
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "train",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 3767,
+   "n_docs": 76536,
+   "seconds": 254.1
+  }
+ },
+ "cite_train_qwen3-emb-8b_text": {
+  "aggregate": {
+   "RR@10": 0.5105661740848892,
+   "R@10": 0.7414034137679494,
+   "R@30": 0.8641412541618625,
+   "R@100": 0.9336409468942686,
+   "nDCG@10": 0.5507734865794782,
+   "Success@1": 0.383328908946111
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "cite",
+   "split": "train",
+   "system": "qwen3-emb-8b",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 3767,
+   "n_docs": 76536,
+   "seconds": 370.8
+  }
+ },
+ "cite_train_rrf_text": {
+  "aggregate": {
+   "RR@10": 0.47024905086359825,
+   "R@10": 0.665433840910933,
+   "R@30": 0.7917870687691709,
+   "R@100": 0.8857363499892108,
+   "nDCG@10": 0.4994040555368949,
+   "Success@1": 0.35518980621183965
+  },
+  "meta": {
+   "runs": [
+    "experiments/v1.0/runs/cite_train_bm25_text.run",
+    "experiments/v1.0/runs/cite_train_bge-m3_text.run"
+   ],
+   "rrf_k": 60,
+   "seconds": 0.6,
+   "query_coverage": 1.0
+  }
+ },
+ "citehc_test_bge-m3_text": {
+  "aggregate": {
+   "RR@10": 0.377117435515873,
+   "R@10": 0.6155970982142858,
+   "R@30": 0.7603608630952381,
+   "R@100": 0.8519996279761904,
+   "nDCG@10": 0.4190563278561699,
+   "Success@1": 0.2578125
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "citehc",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 256,
+   "n_docs": 76536,
+   "seconds": 21.5
+  }
+ },
+ "citehc_test_bge-m3q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5527514260912698,
+   "R@10": 0.7547619047619047,
+   "R@30": 0.8667410714285714,
+   "R@100": 0.9437406994047619,
+   "nDCG@10": 0.5824940809327656,
+   "Success@1": 0.421875
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "citehc",
+   "split": "test",
+   "system": "bge-m3q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 256,
+   "n_docs": 76536,
+   "seconds": 3.2
+  }
+ },
+ "citehc_test_bm25_text": {
+  "aggregate": {
+   "RR@10": 0.395965091765873,
+   "R@10": 0.5648158482142858,
+   "R@30": 0.6938988095238096,
+   "R@100": 0.7989862351190476,
+   "nDCG@10": 0.4224765086467451,
+   "Success@1": 0.30078125
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "citehc",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 256,
+   "n_docs": 76536,
+   "seconds": 21.2
+  }
+ },
+ "citehc_test_bm25q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5543077256944444,
+   "R@10": 0.7436941964285714,
+   "R@30": 0.8263764880952381,
+   "R@100": 0.8862165178571428,
+   "nDCG@10": 0.5867441454967172,
+   "Success@1": 0.4375
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "citehc",
+   "split": "test",
+   "system": "bm25q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 256,
+   "n_docs": 76536,
+   "seconds": 9.0
+  }
+ },
+ "citehc_test_bm25tuned_text": {
+  "aggregate": {
+   "RR@10": 0.4069583953373016,
+   "R@10": 0.5707682291666667,
+   "R@30": 0.6925037202380953,
+   "R@100": 0.7973586309523809,
+   "nDCG@10": 0.4334595448784357,
+   "Success@1": 0.3203125
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "citehc",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.9,
+   "n_queries": 256,
+   "n_docs": 76536,
+   "seconds": 21.5
+  }
+ },
+ "citehc_test_me5-base-ft_text": {
+  "aggregate": {
+   "RR@10": 0.25491071428571427,
+   "R@10": 0.3767020089285714,
+   "R@30": 0.518954613095238,
+   "R@100": 0.6513485863095239,
+   "nDCG@10": 0.2752491378368658,
+   "Success@1": 0.18359375
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "citehc",
+   "split": "test",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 256,
+   "n_docs": 76536,
+   "seconds": 18.7
+  }
+ },
+ "citehc_test_me5-base-ftdm_text": {
+  "aggregate": {
+   "RR@10": 0.30055958581349207,
+   "R@10": 0.5196056547619048,
+   "R@30": 0.6642671130952381,
+   "R@100": 0.8318173363095238,
+   "nDCG@10": 0.3454519794477758,
+   "Success@1": 0.1953125
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "citehc",
+   "split": "test",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 256,
+   "n_docs": 76536,
+   "seconds": 19.2
+  }
+ },
+ "citehc_test_me5-base_text": {
+  "aggregate": {
+   "RR@10": 0.33429749503968254,
+   "R@10": 0.5082682291666667,
+   "R@30": 0.6762369791666667,
+   "R@100": 0.7967168898809524,
+   "nDCG@10": 0.35969664443039967,
+   "Success@1": 0.2421875
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "citehc",
+   "split": "test",
+   "system": "me5-base",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 256,
+   "n_docs": 76536,
+   "seconds": 20.7
+  }
+ },
+ "citehc_test_me5-large_text": {
+  "aggregate": {
+   "RR@10": 0.31369977678571426,
+   "R@10": 0.510546875,
+   "R@30": 0.6548828125,
+   "R@100": 0.7838262648809524,
+   "nDCG@10": 0.34497964486131255,
+   "Success@1": 0.19921875
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "citehc",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 256,
+   "n_docs": 76536,
+   "seconds": 21.0
+  }
+ },
+ "citehc_test_qwen3-emb-8b_text": {
+  "aggregate": {
+   "RR@10": 0.455144779265873,
+   "R@10": 0.6272600446428571,
+   "R@30": 0.812100074404762,
+   "R@100": 0.8971354166666666,
+   "nDCG@10": 0.47482176575392804,
+   "Success@1": 0.359375
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "citehc",
+   "split": "test",
+   "system": "qwen3-emb-8b",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 256,
+   "n_docs": 76536,
+   "seconds": 33.4
+  }
+ },
+ "citehc_test_rerank_text": {
+  "aggregate": {
+   "RR@10": 0.35851314484126984,
+   "R@10": 0.5888113839285715,
+   "R@30": 0.6938988095238096,
+   "R@100": 0.7989862351190476,
+   "nDCG@10": 0.4030966583215775,
+   "Success@1": 0.23046875
+  },
+  "meta": {
+   "first_stage": "experiments/v1.0/runs/citehc_test_bm25_text.run",
+   "model": "BAAI/bge-reranker-v2-m3",
+   "depth": 30,
+   "max_length": 1024,
+   "seconds": 47.8,
+   "query_coverage": 1.0
+  }
+ },
+ "citehc_test_rrf_text": {
+  "aggregate": {
+   "RR@10": 0.4382998511904762,
+   "R@10": 0.6356863839285715,
+   "R@30": 0.7813616071428572,
+   "R@100": 0.859765625,
+   "nDCG@10": 0.4717460925968684,
+   "Success@1": 0.32421875
+  },
+  "meta": {
+   "runs": [
+    "experiments/v1.0/runs/citehc_test_bm25_text.run",
+    "experiments/v1.0/runs/citehc_test_bge-m3_text.run"
+   ],
+   "rrf_k": 60,
+   "seconds": 0.0,
+   "query_coverage": 1.0
+  }
+ },
+ "precedent_dev_bge-m3_text": {
+  "aggregate": {
+   "RR@10": 0.3836230788611741,
+   "R@10": 0.5498677248677248,
+   "R@30": 0.6720899470899471,
+   "R@100": 0.7795634920634921,
+   "nDCG@10": 0.40712130312278755,
+   "Success@1": 0.2857142857142857
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "dev",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 252,
+   "n_docs": 76536,
+   "seconds": 21.0
+  }
+ },
+ "precedent_dev_bge-m3q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5703168304358781,
+   "R@10": 0.8113756613756614,
+   "R@30": 0.8765873015873016,
+   "R@100": 0.9153439153439153,
+   "nDCG@10": 0.6157155967651822,
+   "Success@1": 0.4444444444444444
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "dev",
+   "system": "bge-m3q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 252,
+   "n_docs": 76536,
+   "seconds": 2.9
+  }
+ },
+ "precedent_dev_bm25_text": {
+  "aggregate": {
+   "RR@10": 0.38445452254976065,
+   "R@10": 0.5141534391534391,
+   "R@30": 0.617989417989418,
+   "R@100": 0.7319444444444444,
+   "nDCG@10": 0.40316239381943764,
+   "Success@1": 0.3134920634920635
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "dev",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 252,
+   "n_docs": 76536,
+   "seconds": 20.8
+  }
+ },
+ "precedent_dev_bm25q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5802894305870496,
+   "R@10": 0.7386904761904762,
+   "R@30": 0.8451058201058201,
+   "R@100": 0.907010582010582,
+   "nDCG@10": 0.6019513614829348,
+   "Success@1": 0.46825396825396826
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "dev",
+   "system": "bm25q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 252,
+   "n_docs": 76536,
+   "seconds": 9.0
+  }
+ },
+ "precedent_dev_me5-base_text": {
+  "aggregate": {
+   "RR@10": 0.3474757495590829,
+   "R@10": 0.47275132275132276,
+   "R@30": 0.5805555555555556,
+   "R@100": 0.6943121693121693,
+   "nDCG@10": 0.362298910791013,
+   "Success@1": 0.2777777777777778
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "dev",
+   "system": "me5-base",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 252,
+   "n_docs": 76536,
+   "seconds": 20.6
+  }
+ },
+ "precedent_dev_me5-large_text": {
+  "aggregate": {
+   "RR@10": 0.3226599899218947,
+   "R@10": 0.48869047619047623,
+   "R@30": 0.6304232804232804,
+   "R@100": 0.7408068783068783,
+   "nDCG@10": 0.3485339645439312,
+   "Success@1": 0.23015873015873015
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "dev",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 252,
+   "n_docs": 76536,
+   "seconds": 21.1
+  }
+ },
+ "precedent_dev_qwen3-emb-8b_text": {
+  "aggregate": {
+   "RR@10": 0.45378873771730915,
+   "R@10": 0.607473544973545,
+   "R@30": 0.7404100529100529,
+   "R@100": 0.8517195767195767,
+   "nDCG@10": 0.4698281678345812,
+   "Success@1": 0.3531746031746032
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "dev",
+   "system": "qwen3-emb-8b",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 252,
+   "n_docs": 76536,
+   "seconds": 31.9
+  }
+ },
+ "precedent_dev_rrf_text": {
+  "aggregate": {
+   "RR@10": 0.4076814058956916,
+   "R@10": 0.556415343915344,
+   "R@30": 0.7005291005291006,
+   "R@100": 0.7988095238095239,
+   "nDCG@10": 0.42818360775473363,
+   "Success@1": 0.30952380952380953
+  },
+  "meta": {
+   "runs": [
+    "experiments/v1.0/runs/precedent_dev_bm25_text.run",
+    "experiments/v1.0/runs/precedent_dev_bge-m3_text.run"
+   ],
+   "rrf_k": 60,
+   "seconds": 0.0,
+   "query_coverage": 1.0
+  }
+ },
+ "precedent_test_bge-m3_text": {
+  "aggregate": {
+   "RR@10": 0.41264304171280913,
+   "R@10": 0.58546907134947,
+   "R@30": 0.7312925170068028,
+   "R@100": 0.8270052206929283,
+   "nDCG@10": 0.42756471399925905,
+   "Success@1": 0.29900332225913623
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "test",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 301,
+   "n_docs": 76536,
+   "seconds": 24.2
+  }
+ },
+ "precedent_test_bge-m3q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5733072298686918,
+   "R@10": 0.7249248536623952,
+   "R@30": 0.8351131150134472,
+   "R@100": 0.9137794652744818,
+   "nDCG@10": 0.581316443795639,
+   "Success@1": 0.46179401993355484
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "test",
+   "system": "bge-m3q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 301,
+   "n_docs": 76536,
+   "seconds": 3.4
+  }
+ },
+ "precedent_test_bm25_text": {
+  "aggregate": {
+   "RR@10": 0.41671280915466963,
+   "R@10": 0.5339740547381744,
+   "R@30": 0.6563834836260086,
+   "R@100": 0.7617070083847493,
+   "nDCG@10": 0.4199489035395873,
+   "Success@1": 0.3222591362126246
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 301,
+   "n_docs": 76536,
+   "seconds": 24.2
+  }
+ },
+ "precedent_test_bm25q2q_text": {
+  "aggregate": {
+   "RR@10": 0.570062753783684,
+   "R@10": 0.7121895269735802,
+   "R@30": 0.8041053630754628,
+   "R@100": 0.8714997626957759,
+   "nDCG@10": 0.5783747911609017,
+   "Success@1": 0.45514950166112955
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "test",
+   "system": "bm25q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 301,
+   "n_docs": 76536,
+   "seconds": 9.4
+  }
+ },
+ "precedent_test_bm25tuned_text": {
+  "aggregate": {
+   "RR@10": 0.42298686916627115,
+   "R@10": 0.5456019617149186,
+   "R@30": 0.6582423667141275,
+   "R@100": 0.7578310393925012,
+   "nDCG@10": 0.43227493851440585,
+   "Success@1": 0.33554817275747506
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "test",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.9,
+   "n_queries": 301,
+   "n_docs": 76536,
+   "seconds": 24.3
+  }
+ },
+ "precedent_test_me5-base-ft_text": {
+  "aggregate": {
+   "RR@10": 0.259765068818225,
+   "R@10": 0.36362917259927224,
+   "R@30": 0.5061303591203924,
+   "R@100": 0.6325739598164847,
+   "nDCG@10": 0.269049329952836,
+   "Success@1": 0.18272425249169436
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "test",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 301,
+   "n_docs": 76536,
+   "seconds": 21.2
+  }
+ },
+ "precedent_test_me5-base-ftdm_text": {
+  "aggregate": {
+   "RR@10": 0.3112389917207193,
+   "R@10": 0.4976269577598481,
+   "R@30": 0.6349470020566366,
+   "R@100": 0.7946131941148552,
+   "nDCG@10": 0.3413389802910341,
+   "Success@1": 0.2059800664451827
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "test",
+   "system": "me5-base-ft",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 301,
+   "n_docs": 76536,
+   "seconds": 20.6
+  }
+ },
+ "precedent_test_me5-base_text": {
+  "aggregate": {
+   "RR@10": 0.37732030796814847,
+   "R@10": 0.5224252491694352,
+   "R@30": 0.6625138427464009,
+   "R@100": 0.7759452618256605,
+   "nDCG@10": 0.38628292774373635,
+   "Success@1": 0.292358803986711
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "test",
+   "system": "me5-base",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 301,
+   "n_docs": 76536,
+   "seconds": 23.3
+  }
+ },
+ "precedent_test_me5-large_text": {
+  "aggregate": {
+   "RR@10": 0.33354558877814694,
+   "R@10": 0.491140642303433,
+   "R@30": 0.6204318936877077,
+   "R@100": 0.7471523493118177,
+   "nDCG@10": 0.34558235028579415,
+   "Success@1": 0.23588039867109634
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "test",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 301,
+   "n_docs": 76536,
+   "seconds": 23.8
+  }
+ },
+ "precedent_test_qwen3-emb-8b_text": {
+  "aggregate": {
+   "RR@10": 0.48248035648367876,
+   "R@10": 0.6323762062964721,
+   "R@30": 0.7896693561145389,
+   "R@100": 0.8839977851605758,
+   "nDCG@10": 0.48636209410187464,
+   "Success@1": 0.37209302325581395
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "test",
+   "system": "qwen3-emb-8b",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 301,
+   "n_docs": 76536,
+   "seconds": 37.4
+  }
+ },
+ "precedent_test_rerank_text": {
+  "aggregate": {
+   "RR@10": 0.37136001687496706,
+   "R@10": 0.55687391235564,
+   "R@30": 0.6563834836260086,
+   "R@100": 0.7617070083847493,
+   "nDCG@10": 0.3975316284739724,
+   "Success@1": 0.25249169435215946
+  },
+  "meta": {
+   "first_stage": "experiments/v1.0/runs/precedent_test_bm25_text.run",
+   "model": "BAAI/bge-reranker-v2-m3",
+   "depth": 30,
+   "max_length": 1024,
+   "seconds": 55.2,
+   "query_coverage": 1.0
+  }
+ },
+ "precedent_test_rrf_text": {
+  "aggregate": {
+   "RR@10": 0.45368217054263565,
+   "R@10": 0.6108606233190951,
+   "R@30": 0.7489321309919316,
+   "R@100": 0.8377630121816168,
+   "nDCG@10": 0.4666200608636345,
+   "Success@1": 0.3388704318936877
+  },
+  "meta": {
+   "runs": [
+    "experiments/v1.0/runs/precedent_test_bm25_text.run",
+    "experiments/v1.0/runs/precedent_test_bge-m3_text.run"
+   ],
+   "rrf_k": 60,
+   "seconds": 0.0,
+   "query_coverage": 1.0
+  }
+ },
+ "precedent_train_bge-m3_text": {
+  "aggregate": {
+   "RR@10": 0.4758269206900832,
+   "R@10": 0.6638552539463511,
+   "R@30": 0.7891400507495208,
+   "R@100": 0.8784879952560231,
+   "nDCG@10": 0.5051500018932992,
+   "Success@1": 0.3627280625543006
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "train",
+   "system": "bge-m3",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 2302,
+   "n_docs": 76536,
+   "seconds": 141.4
+  }
+ },
+ "precedent_train_bge-m3q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5635310220236371,
+   "R@10": 0.7432162836964288,
+   "R@30": 0.8497052644478796,
+   "R@100": 0.912480160297276,
+   "nDCG@10": 0.5905719388169371,
+   "Success@1": 0.44439617723718505
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "train",
+   "system": "bge-m3q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 2302,
+   "n_docs": 76536,
+   "seconds": 30.1,
+   "q2q_deepened": 61
+  }
+ },
+ "precedent_train_bm25_text": {
+  "aggregate": {
+   "RR@10": 0.43152503688993693,
+   "R@10": 0.5948242242161851,
+   "R@30": 0.7245214102675006,
+   "R@100": 0.8203734628148182,
+   "nDCG@10": 0.4560084884178545,
+   "Success@1": 0.33231972198088616
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "train",
+   "system": "bm25",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 2302,
+   "n_docs": 76536,
+   "seconds": 163.8
+  }
+ },
+ "precedent_train_bm25q2q_text": {
+  "aggregate": {
+   "RR@10": 0.5247131548825728,
+   "R@10": 0.6974704203878324,
+   "R@30": 0.8017665014298376,
+   "R@100": 0.8779356178139844,
+   "nDCG@10": 0.5495238410540898,
+   "Success@1": 0.4126846220677672
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "train",
+   "system": "bm25q2q",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 2302,
+   "n_docs": 76536,
+   "seconds": 41.0,
+   "q2q_deepened": 60
+  }
+ },
+ "precedent_train_me5-base_text": {
+  "aggregate": {
+   "RR@10": 0.3941548412008881,
+   "R@10": 0.5803996006690594,
+   "R@30": 0.7158974850240757,
+   "R@100": 0.8196485379424129,
+   "nDCG@10": 0.42283314540439243,
+   "Success@1": 0.289748045178106
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "train",
+   "system": "me5-base",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 2302,
+   "n_docs": 76536,
+   "seconds": 136.8
+  }
+ },
+ "precedent_train_me5-large_text": {
+  "aggregate": {
+   "RR@10": 0.4001098078965151,
+   "R@10": 0.5857696565712613,
+   "R@30": 0.7269973806467009,
+   "R@100": 0.8300640122173188,
+   "nDCG@10": 0.42852786112995356,
+   "Success@1": 0.29756733275412683
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "train",
+   "system": "me5-large",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 2302,
+   "n_docs": 76536,
+   "seconds": 144.1
+  }
+ },
+ "precedent_train_qwen3-emb-8b_text": {
+  "aggregate": {
+   "RR@10": 0.5358225421648533,
+   "R@10": 0.7537066127032652,
+   "R@30": 0.8658261590711634,
+   "R@100": 0.9332447912161206,
+   "nDCG@10": 0.5728627820759861,
+   "Success@1": 0.41225021720243266
+  },
+  "meta": {
+   "build": "data/build/v1.0",
+   "build_manifest_sha": "a63cc3ff183111c94a25c37c8b9b08f6b4782ce5449147d20cd8d7cd425c40ba",
+   "task": "precedent",
+   "split": "train",
+   "system": "qwen3-emb-8b",
+   "field": "text",
+   "k": 100,
+   "k1": 0.9,
+   "b": 0.4,
+   "n_queries": 2302,
+   "n_docs": 76536,
+   "seconds": 206.1
+  }
+ },
+ "precedent_train_rrf_text": {
+  "aggregate": {
+   "RR@10": 0.4933410216099182,
+   "R@10": 0.6811540892059111,
+   "R@30": 0.802474383903576,
+   "R@100": 0.8907043000440047,
+   "nDCG@10": 0.5220781578451458,
+   "Success@1": 0.3805386620330148
+  },
+  "meta": {
+   "runs": [
+    "experiments/v1.0/runs/precedent_train_bm25_text.run",
+    "experiments/v1.0/runs/precedent_train_bge-m3_text.run"
+   ],
+   "rrf_k": 60,
+   "seconds": 0.4,
+   "query_coverage": 1.0
+  }
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "counts": {
+  "bg": 34,
+  "cs": 39,
+  "da": 113,
+  "de": 1059,
+  "el": 1554,
+  "es": 1005,
+  "fi": 61,
+  "fr": 1110,
+  "ga": 2,
+  "hr": 27,
+  "hu": 5,
+  "it": 1021,
+  "lt": 38,
+  "lv": 5,
+  "mt": 1,
+  "nl": 415,
+  "pl": 537,
+  "pt": 150,
+  "ro": 312,
+  "sk": 86,
+  "sl": 26,
+  "sv": 83
+ },
+ "selected": [
+  "all",
+  "da",
+  "de",
+  "el",
+  "es",
+  "fr",
+  "it",
+  "nl",
+  "pl",
+  "pt",
+  "ro"
+ ],
+ "test_questions_nonEN_orig": 7752,
+ "test_questions_with_orig_text": 7683,
+ "test_questions_orig_unknown": 0
+}

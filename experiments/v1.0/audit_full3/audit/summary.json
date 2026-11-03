@@ -1,0 +1,244 @@
+{
+ "n_queries": 300,
+ "n_judged_pairs": 14687,
+ "kappa": 0.5962814230272955,
+ "confusion": {
+  "1-1": 2438,
+  "0-1": 1463,
+  "0-0": 8941,
+  "2-2": 539,
+  "1-2": 463,
+  "1-0": 617,
+  "0-2": 32,
+  "2-1": 185,
+  "2-0": 9
+ },
+ "official_grade2": [
+  272,
+  300,
+  [
+   0.8684138011961098,
+   0.9346362090723985
+  ]
+ ],
+ "official_grade_ge1": [
+  298,
+  300,
+  [
+   0.9760219257685385,
+   0.9981698899670288
+  ]
+ ],
+ "random_grade0": [
+  600,
+  600,
+  [
+   0.9936380666717896,
+   1.0000000000000002
+  ]
+ ],
+ "queries_with_nonofficial_grade2": [
+  195,
+  300,
+  [
+   0.594438067475952,
+   0.7017689035247274
+  ]
+ ],
+ "nonofficial_grade2_per_query_mean": 1.9433333333333334,
+ "nonofficial_grade1_per_query_mean": 13.443333333333333,
+ "pool_yield_grade2_by_source": {
+  "bge-m3_text": 257,
+  "bm25_text": 245,
+  "me5-base_text": 231,
+  "rerank_text": 262,
+  "me5-base-ftdm_text": 90,
+  "me5-large_text": 17,
+  "qwen3-emb-8b_text": 20,
+  "me5-base-ft_text": 62,
+  "rrf_text": 9,
+  "rnd_s13": 19,
+  "rndwin_s13": 19
+ },
+ "systems": [
+  "bm25_text",
+  "bm25tuned_text",
+  "me5-base_text",
+  "me5-large_text",
+  "bge-m3_text",
+  "me5-base-ft_text",
+  "me5-base-ftdm_text",
+  "rrf_text",
+  "rerank_text",
+  "rndwin_s13",
+  "rnd_s13",
+  "qwen3-emb-8b_text"
+ ],
+ "mrr_official": {
+  "bm25_text": 0.5931693121693121,
+  "bm25tuned_text": 0.5994378306878307,
+  "me5-base_text": 0.5423015873015874,
+  "me5-large_text": 0.509063492063492,
+  "bge-m3_text": 0.5583677248677249,
+  "me5-base-ft_text": 0.41965211640211636,
+  "me5-base-ftdm_text": 0.6559391534391537,
+  "rrf_text": 0.628117724867725,
+  "rerank_text": 0.5303875661375662,
+  "rndwin_s13": 0.7164285714285715,
+  "rnd_s13": 0.662728835978836,
+  "qwen3-emb-8b_text": 0.7127910052910054
+ },
+ "mrr_augmented": {
+  "bm25_text": 0.71444708994709,
+  "bm25tuned_text": 0.7217711640211641,
+  "me5-base_text": 0.6694603174603174,
+  "me5-large_text": 0.6134986772486772,
+  "bge-m3_text": 0.6780674603174603,
+  "me5-base-ft_text": 0.5229325396825397,
+  "me5-base-ftdm_text": 0.7461666666666669,
+  "rrf_text": 0.7480820105820106,
+  "rerank_text": 0.6647354497354497,
+  "rndwin_s13": 0.8443968253968256,
+  "rnd_s13": 0.7831507936507937,
+  "qwen3-emb-8b_text": 0.8285648148148148
+ },
+ "kendall_tau_b": 1.0,
+ "kendall_tau_b_ci": [
+  0.7878787878787878,
+  1.0
+ ],
+ "pairwise_reversals": [],
+ "families": [
+  "judge-claude",
+  "judge-gpt"
+ ],
+ "held_out": [],
+ "t": "2026-10-21T19:23:19+00:00",
+ "judged_at_10": {
+  "bm25_text": 0.9996666666666667,
+  "bm25tuned_text": 0.9996666666666667,
+  "me5-base_text": 0.9776666666666667,
+  "me5-large_text": 0.979,
+  "bge-m3_text": 0.994,
+  "me5-base-ft_text": 0.9943333333333333,
+  "me5-base-ftdm_text": 0.9966666666666667,
+  "rrf_text": 1.0,
+  "rerank_text": 1.0,
+  "rndwin_s13": 1.0,
+  "rnd_s13": 1.0,
+  "qwen3-emb-8b_text": 1.0
+ },
+ "weighted": {
+  "queries_with_nonofficial_grade2": 0.558707048592109,
+  "queries_with_nonofficial_grade2_ci": [
+   0.48861035090920457,
+   0.6314273551055162
+  ],
+  "nonofficial_grade2_per_query_mean": 1.8062810922581112,
+  "mrr_official": {
+   "bm25_text": 0.5573996147345014,
+   "bm25tuned_text": 0.5622977481612792,
+   "me5-base_text": 0.5001263059786162,
+   "me5-large_text": 0.4547558337653234,
+   "bge-m3_text": 0.5464715853419584,
+   "me5-base-ft_text": 0.3951252566586471,
+   "me5-base-ftdm_text": 0.6117512933085847,
+   "rrf_text": 0.6138232335079653,
+   "rerank_text": 0.5137735042363784,
+   "rndwin_s13": 0.7224981436593394,
+   "rnd_s13": 0.6724266890238453,
+   "qwen3-emb-8b_text": 0.721837145444245
+  },
+  "mrr_augmented": {
+   "bm25_text": 0.6732859797530506,
+   "bm25tuned_text": 0.6911709870268553,
+   "me5-base_text": 0.6218179299533096,
+   "me5-large_text": 0.5417354410474304,
+   "bge-m3_text": 0.6560206659079153,
+   "me5-base-ft_text": 0.4800962314257358,
+   "me5-base-ftdm_text": 0.7046012183502631,
+   "rrf_text": 0.729646558240157,
+   "rerank_text": 0.6349257840215718,
+   "rndwin_s13": 0.8334801522141433,
+   "rnd_s13": 0.7729903562957766,
+   "qwen3-emb-8b_text": 0.8082697669389888
+  },
+  "strata_population": {
+   "hit0_cite0": 5813,
+   "hit0_cite1": 250,
+   "hit1_cite0": 4749,
+   "hit1_cite1": 150
+  },
+  "strata_sampled": {
+   "hit0_cite0": 75,
+   "hit0_cite1": 75,
+   "hit1_cite0": 75,
+   "hit1_cite1": 75
+  }
+ },
+ "kendall_tau_b_unweighted": 0.9696969696969697,
+ "bootstrap": "stratified (within-stratum resampling), population-weighted; n_boot=1000",
+ "cited_by_official_reply_by_grade": {
+  "0": {
+   "cited": 3,
+   "n": 9771,
+   "rate": 0.00030703101013202335
+  },
+  "1": {
+   "cited": 105,
+   "n": 4033,
+   "rate": 0.026035209521448055
+  },
+  "2": {
+   "cited": 76,
+   "n": 583,
+   "rate": 0.13036020583190394
+  }
+ },
+ "table_rows": [
+  [
+   "Sampled test queries / judged pairs",
+   "300 / 14687"
+  ],
+  [
+   "Inter-judge Cohen's $\\kappa$ (3 grades)",
+   "0.596"
+  ],
+  [
+   "Official answers graded 2 (95\\% CI)",
+   "272/300 (87--93\\%)"
+  ],
+  [
+   "Random controls graded 0 (95\\% CI)",
+   "600/600 (99--100\\%)"
+  ],
+  [
+   "Queries with $\\geq$1 non-official grade-2 answer in the pool, sample",
+   "195/300 (59--70\\%)"
+  ],
+  [
+   "\\quad same, weighted to the test population (95\\% CI)",
+   "56\\% (49--63\\%)"
+  ],
+  [
+   "Non-official grade-2 / grade-1 answers per query (sample)",
+   "1.94 / 13.44"
+  ],
+  [
+   "Kendall's $\\tau_b$ of weighted orderings (95\\% CI)",
+   "1.000 (0.788--1.000)"
+  ],
+  [
+   "Pairwise system reversals",
+   "0 of 66"
+  ],
+  [
+   "Judged@10: pooled runs (min) / held-out run(s)",
+   "0.98 / "
+  ],
+  [
+   "Cited by the official reply: grade 2 / 1 / 0 (non-official)",
+   "13\\% / 3\\% / 0\\%"
+  ]
+ ]
+}

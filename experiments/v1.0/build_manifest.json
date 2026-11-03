@@ -1,0 +1,111 @@
+{
+ "version": "v1.0",
+ "lang": "en",
+ "splits": {
+  "train": [
+   "2014-01-01",
+   "2021-12-31"
+  ],
+  "dev": [
+   "2022-01-01",
+   "2023-12-31"
+  ],
+  "test": [
+   "2024-01-01",
+   "2026-12-31"
+  ]
+ },
+ "n_question_ids": 80255,
+ "n_answers_parsed": 76536,
+ "n_corpus": 76536,
+ "n_queries": 78314,
+ "link_sources": {
+  "detail": 11285,
+  "own_file": 20075,
+  "csv": 46619,
+  "answer_header": 694
+ },
+ "drops": {
+  "answer_empty": 1,
+  "answer_parse:ValueError": 9,
+  "question_unanswered_or_answer_missing": 1592,
+  "question_empty": 163,
+  "question_parse:XMLSyntaxError": 1,
+  "question_no_date": 184,
+  "question_file_missing": 1
+ },
+ "counts": {
+  "train": {
+   "answer_queries": 59612,
+   "precedent_queries": 2302,
+   "precedent_pairs": 3393,
+   "precedenthc_queries": 1788,
+   "precedenthc_pairs": 2462,
+   "cite_queries": 3767,
+   "cite_pairs": 5592,
+   "citehc_queries": 2991,
+   "citehc_pairs": 4199
+  },
+  "dev": {
+   "answer_queries": 7735,
+   "precedent_queries": 252,
+   "precedent_pairs": 364,
+   "precedenthc_queries": 159,
+   "precedenthc_pairs": 208,
+   "cite_queries": 299,
+   "cite_pairs": 441,
+   "citehc_queries": 186,
+   "citehc_pairs": 245
+  },
+  "test": {
+   "answer_queries": 10962,
+   "precedent_queries": 301,
+   "precedent_pairs": 481,
+   "precedenthc_queries": 192,
+   "precedenthc_pairs": 269,
+   "cite_queries": 396,
+   "cite_pairs": 634,
+   "citehc_queries": 256,
+   "citehc_pairs": 352
+  }
+ },
+ "unsplit_queries": 5,
+ "joint_groups_cross_split_excluded": 1,
+ "precedent_edge_attrition": {
+  "ok": 4461,
+  "ok_drafting_only": 2685,
+  "cited_answer_not_before_reply": 281,
+  "cited_question_has_no_answer_doc": 98
+ },
+ "queries_with_equivalent_answer": 1396,
+ "queries_with_equivalent_by_type": {
+  "twin_question": 419,
+  "duplicate_answer": 852,
+  "near_duplicate_answer": 296
+ },
+ "files": {
+  "corpus.jsonl": "dad785614505846a3c4cd8f691819e82b4e940ccb3b335957a53c4765b6d8ade",
+  "equivalents.jsonl": "a7a4686f18f8d535a4c99a79abba0b70c788e60c87e316e8150067dc8c7631f2",
+  "precedent_meta.jsonl": "30a4ae069f0193f155888f137748b95ee12ce17941dfb48031e0c91bfa561ea8",
+  "qrels/answer_dev.tsv": "235407d1010397c64b687718daa2a0ef124993454c4f6fa538e6da803064960a",
+  "qrels/answer_test.tsv": "9c14a31c0aa31220699089d02b4810006857cd4f6a0a13bbe9303747a96bcb1e",
+  "qrels/answer_train.tsv": "260d872cde7d2f0da207938d9af9d6476ddebd1929f4ca38edd987e96f500919",
+  "qrels/answerlenient_dev.tsv": "870779701b6f0e794ac752af8dd461d8da2aa55bb0434f131fae21513464aa35",
+  "qrels/answerlenient_test.tsv": "41aa0382317bb60f3dba59f250776e7928abdd8d8d355e5c27b6af4d6338b57e",
+  "qrels/answerlenient_train.tsv": "b7567d8bf214a89418bbc4a89c76ec7b682ab00db6e238626ed9eae6ffd7d1ff",
+  "qrels/cite_dev.tsv": "58590b571f665a707fc2628338db93eb415dab3c2ccb10dd45bc7b11ecd7c108",
+  "qrels/cite_test.tsv": "99e5b7ab111c905f749da1b25cf5a7cf9e0d3e13cb632d8747eb64a2fe4ced38",
+  "qrels/cite_train.tsv": "683d6f53621e9f74c43de47201a82dd9e889259fd661b9cbeb52fbb8ba07f9c6",
+  "qrels/citehc_dev.tsv": "7ccf6179d9206f05be17b2e66719847852bb6a4d68bd9a4c618484bc0347180e",
+  "qrels/citehc_test.tsv": "3e807fff0cbe36650d8ffae0c3684e082b240b4d389f90237d454ed33eb25b19",
+  "qrels/citehc_train.tsv": "6e1c10dbd4bffb68516eb01c971e12974eef8c2242ccf584b22b069e24ae8d18",
+  "qrels/precedent_dev.tsv": "2c19dc7840e55eb1e7f0654a4954c977fdb3add75d8beda47d1c86072d1605cf",
+  "qrels/precedent_test.tsv": "166a7fd2172a539c571982009085f902496db33ed349da3b17435ae90baa16c9",
+  "qrels/precedent_train.tsv": "b986a24928722cdb5ac284a5322a5945a0c327f7a8e1603440e4b677e453ae14",
+  "qrels/precedenthc_dev.tsv": "884ab73e656f71df7f50c3c41bc1d41f3e0e11f6d273eaeefc45ee89d68e1617",
+  "qrels/precedenthc_test.tsv": "9d44dc15aab2a1fa4b0d66441685c10e5679f1aa3902c40e0be129c5fc7209a4",
+  "qrels/precedenthc_train.tsv": "02bee845a21f3517237c6a04f99f3de6eb995c95494f3d1b059e545325464d05",
+  "queries.jsonl": "533354c1a15b6022ef18d188651b8afa4932cc4e5ef923bb543ad3afa2efef16",
+  "queries_xling.jsonl": "7c0758d94db0ea1f10051e05aa65f5b932690a3278ce18dde0fe2f780d9b5143"
+ }
+}

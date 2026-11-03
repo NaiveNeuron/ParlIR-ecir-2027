@@ -1,0 +1,86 @@
+{
+ "answer_vs_cite_all": {
+  "systems": [
+   "bm25_text",
+   "bm25tuned_text",
+   "me5-base_text",
+   "me5-large_text",
+   "bge-m3_text",
+   "me5-base-ft_text",
+   "me5-base-ftdm_text",
+   "rrf_text",
+   "rerank_text"
+  ],
+  "tau_b": 0.3888888888888889,
+  "concordant": 25,
+  "discordant": 11,
+  "pairs": 36,
+  "tau_b_ci": [
+   0.2222222222222222,
+   0.5555555555555556
+  ],
+  "tau_b_ci_method": "joint grouped bootstrap (shared queries share replicate weights)"
+ },
+ "answer_vs_cite_without_fine_tuned": {
+  "systems": [
+   "bm25_text",
+   "bm25tuned_text",
+   "me5-base_text",
+   "me5-large_text",
+   "bge-m3_text",
+   "rrf_text",
+   "rerank_text"
+  ],
+  "tau_b": 0.5238095238095238,
+  "concordant": 16,
+  "discordant": 5,
+  "pairs": 21,
+  "tau_b_ci": [
+   0.23809523809523808,
+   0.8095238095238095
+  ],
+  "tau_b_ci_method": "joint grouped bootstrap (shared queries share replicate weights)"
+ },
+ "answer_vs_precedent_all": {
+  "systems": [
+   "bm25_text",
+   "bm25tuned_text",
+   "me5-base_text",
+   "me5-large_text",
+   "bge-m3_text",
+   "me5-base-ft_text",
+   "me5-base-ftdm_text",
+   "rrf_text",
+   "rerank_text"
+  ],
+  "tau_b": 0.3888888888888889,
+  "concordant": 25,
+  "discordant": 11,
+  "pairs": 36,
+  "tau_b_ci": [
+   0.16666666666666666,
+   0.5555555555555556
+  ],
+  "tau_b_ci_method": "joint grouped bootstrap (shared queries share replicate weights)"
+ },
+ "answer_vs_precedent_without_fine_tuned": {
+  "systems": [
+   "bm25_text",
+   "bm25tuned_text",
+   "me5-base_text",
+   "me5-large_text",
+   "bge-m3_text",
+   "rrf_text",
+   "rerank_text"
+  ],
+  "tau_b": 0.5238095238095238,
+  "concordant": 16,
+  "discordant": 5,
+  "pairs": 21,
+  "tau_b_ci": [
+   0.14285714285714285,
+   0.8095238095238095
+  ],
+  "tau_b_ci_method": "joint grouped bootstrap (shared queries share replicate weights)"
+ }
+}

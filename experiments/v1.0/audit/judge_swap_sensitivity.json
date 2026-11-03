@@ -1,0 +1,60 @@
+{
+ "n_queries_old_judges": 250,
+ "weighted_prevalence_by_rule": {
+  "both2": {
+   "gemini_deepseek": 0.22130239980359695,
+   "claude_gpt": 0.29173019087951935
+  },
+  "min": {
+   "gemini_deepseek": 0.22130239980359695,
+   "claude_gpt": 0.29173019087951935
+  },
+  "either2": {
+   "gemini_deepseek": 0.44809181857239333,
+   "claude_gpt": 0.5739655066593017
+  }
+ },
+ "per_judge_calibration": {
+  "claude-haiku-5-5": {
+   "official_grade2": [
+    225,
+    300
+   ],
+   "random_grade0": [
+    600,
+    600
+   ]
+  },
+  "gpt-6-luna": {
+   "official_grade2": [
+    268,
+    300
+   ],
+   "random_grade0": [
+    600,
+    600
+   ]
+  },
+  "gemini-3.5-flash": {
+   "official_grade2": [
+    210,
+    250
+   ],
+   "random_grade0": [
+    500,
+    500
+   ]
+  },
+  "deepseek-v4-flash": {
+   "official_grade2": [
+    216,
+    250
+   ],
+   "random_grade0": [
+    500,
+    500
+   ]
+  }
+ },
+ "note": "Pre-registered final-audit judges (Gemini/DeepSeek Flash, commandcode provider) stopped after 250/300 queries (provider out of credit); final judges Claude Haiku 5.5 + GPT-6 Luna (D24). Prevalence = population-weighted share of the 250 queries with >=1 non-official grade-2 answer, without adjudication, under each aggregation rule."
+}

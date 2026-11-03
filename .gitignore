@@ -1,0 +1,10 @@
+data/
+experiments/*
+!experiments/v1.0/
+.venv/
+.env
+*.token
+*.pyc
+__pycache__/
+.pytest_cache/
+.cache/

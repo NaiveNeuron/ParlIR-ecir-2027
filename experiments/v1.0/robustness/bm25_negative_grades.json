@@ -1,0 +1,15 @@
+{
+ "n_queries": 300,
+ "missing": 0,
+ "grade_counts": {
+  "1": 147,
+  "0": 82,
+  "2": 71
+ },
+ "weighted_share": {
+  "1": 0.5132068357355739,
+  "0": 0.30501611628048575,
+  "2": 0.18177704798394523
+ },
+ "note": "Final (adjudicated) audit grade of the top-ranked non-official BM25 answer, i.e. the hard negative the pre-registered fine-tuning protocol would mine, on the 300 audited TEST queries (population-weighted). The training split was not audited; this is a proxy."
+}
